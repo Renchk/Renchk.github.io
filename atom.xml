@@ -41,26 +41,26 @@
   </entry>
   
   <entry>
-    <title>如何搭建基于Hexo的独立博客</title>
-    <link href="https://renchk.github.io/2017/07/05/tes/"/>
-    <id>https://renchk.github.io/2017/07/05/tes/</id>
+    <title>关于我</title>
+    <link href="https://renchk.github.io/2017/07/05/About-Me/"/>
+    <id>https://renchk.github.io/2017/07/05/About-Me/</id>
     <published>2017-07-05T00:00:00.000Z</published>
-    <updated>2018-11-22T15:15:03.850Z</updated>
+    <updated>2018-11-22T15:46:06.576Z</updated>
     
-    <content type="html"><![CDATA[<p>这是预览</p><a id="more"></a><p>这是正文sss</p><p>uiuo</p><p>1212</p>]]></content>
+    <content type="html"><![CDATA[<p>关于我</p><a id="more"></a><p>2015年学习Salesforce</p>]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;这是预览&lt;/p&gt;
+      &lt;p&gt;关于我&lt;/p&gt;
     
     </summary>
     
-      <category term="Cocoa Dev" scheme="https://renchk.github.io/categories/Cocoa-Dev/"/>
+      <category term="Me" scheme="https://renchk.github.io/categories/Me/"/>
     
     
-      <category term="blog" scheme="https://renchk.github.io/tags/blog/"/>
+      <category term="About Me" scheme="https://renchk.github.io/tags/About-Me/"/>
     
-      <category term="Hexo" scheme="https://renchk.github.io/tags/Hexo/"/>
+      <category term="Tony Ren" scheme="https://renchk.github.io/tags/Tony-Ren/"/>
     
   </entry>
   
