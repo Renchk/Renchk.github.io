@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <title>How to add &#39;Loading&#39; Action Status when Searching in Salesforce? | Tony Ren</title>
+  <title>Git Study Note | Tony Ren</title>
   <meta name="HandheldFriendly" content="True">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <link rel="shortcut icon" href="https://raw.githubusercontent.com/TonyRenHK/TonyRenHK/master/Image/TonyRenBlog_favicon.ico">
@@ -130,14 +130,14 @@
     <div class="l_body">
     <div class='container clearfix'>
         <div class='l_main'>
-            <article id="post-2015-07-07-How-to-add-Loading-Action-Status-when-Searching-in-Salesforce" class="post white-box article-type-post" itemscope="" itemprop="blogPost">
+            <article id="post-2016-08-24-Howtopushmycodetogithub" class="post white-box article-type-post" itemscope="" itemprop="blogPost">
     <section class="meta">
         
-            <h1 class="title">How to add &#39;Loading&#39; Action Status when Searching in Salesforce?</h1>
+            <h1 class="title">Git Study Note</h1>
         
         <time class="time">
             <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
-            2015-07-07
+            2016-08-24
         </time>
         <div class="browse"><i class="fas fa-eye fa-fw" aria-hidden="true"></i>
           <span id="busuanzi_value_page_pv"><i class="fas fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span>
@@ -146,7 +146,7 @@
     
     <div class="cats">
         <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
-        <a class="categories" href="/categories/Salesforce/">Salesforce</a>
+        <a class="categories" href="/categories/GitHub/">GitHub</a>
     </div>
 
 
@@ -155,23 +155,21 @@
     <section class="article typo">
 
         <div class="article-entry" itemprop="articleBody">
-            <p>Solution for adding ‘Loading’ Action Status when Searching in Salesforce.</p>
+            <p>How to push code to github?</p>
 <a id="more"></a>
-<h2 id="Question"><a href="#Question" class="headerlink" title="Question"></a>Question</h2><p>How to add ‘Loading’ Action Status when Searching in Salesforce?</p>
-<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>How to add’Loading’ when searching?<br>The following code can be added in Visualforce page.<br>Firstly, we can write javascript code:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$(document).on(&apos;mousemove&apos;, function(e)&#123;</span><br><span class="line">            $(&apos;#loadtext&apos;).css(&#123;</span><br><span class="line">               left:  e.pageX,</span><br><span class="line">               top:   e.pageY</span><br><span class="line">            &#125;);</span><br><span class="line">        &#125;);</span><br></pre></td></tr></table></figure>
-<p>Apex Code in salesforce:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;apex:actionstatus id=&quot;ActionStatus&quot;&gt;</span><br><span class="line">        &lt;apex:facet name=&quot;start&quot;&gt;</span><br><span class="line">            &lt;div class=&quot;waitingSearchDiv&quot; id=&quot;el_loading&quot; style=&quot;background-color: #fbfbfb;</span><br><span class="line">               height: 1000%; width:1000%; opacity:0.65;&quot;&gt; </span><br><span class="line">                &lt;div class=&quot;waitingHolder&quot; id=&quot;loadtext&quot; style=&quot;position: absolute;&quot; align=&quot;left&quot; valign=&quot;top&quot;&gt;</span><br><span class="line">                    &amp;nbsp;&amp;nbsp;&amp;nbsp;</span><br><span class="line">                    &lt;img class=&quot;waitingImage&quot; src=&quot;/img/loading.gif&quot; title=&quot;Please Wait...&quot; /&gt;</span><br><span class="line">                    &lt;span class=&quot;waitingDescription&quot;&gt;Please Wait...&lt;/span&gt;</span><br><span class="line">                &lt;/div&gt;</span><br><span class="line">            &lt;/div&gt;</span><br><span class="line">        &lt;/apex:facet&gt;</span><br><span class="line">    &lt;/apex:actionstatus&gt;</span><br></pre></td></tr></table></figure>
-<p>And then we can write Searching Button:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;apex:commandButton value=&quot;&lt;&lt;&quot; action=&quot;&#123;!firstPage&#125;&quot; reRender=&quot;results,debug,error,pagination&quot; status=&quot;ActionStatus&quot; /&gt;</span><br></pre></td></tr></table></figure>
-<p>The Final result like this:</p>
-<p><img src="https://raw.githubusercontent.com/TonyRenHK/Demo/master/Blog/2015-07-17%2016_33_53-salesforce.com%20-%20loading.png" alt="alt tag"></p>
-<p>Any code samples provided here are purely for experimental purposes and comes with no warranty or support.  The primary purpose of this article is just to share the knowledge and my own experience. Nothing more, nothing less. Use this code and approach at your own risk.Please feel free to contact me (<a href="mailto:yamshingkwan@gmail.com" target="_blank" rel="noopener">yamshingkwan@gmail.com</a>) if you have any inquiry or the code have any problem. Thank you.</p>
+<h2 id="Question"><a href="#Question" class="headerlink" title="Question"></a>Question</h2><p>I have some codes in Cloud 9. How to push my code to github?</p>
+<h2 id="How-to-push-my-code-to-github"><a href="#How-to-push-my-code-to-github" class="headerlink" title="How to push my code to github?"></a>How to push my code to github?</h2><p>It applied in cloud 9.</p>
+<h2 id="Follow-below-Code"><a href="#Follow-below-Code" class="headerlink" title="Follow below Code"></a>Follow below Code</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ cd workspace</span><br><span class="line">$ cd renchk.github.io</span><br><span class="line">$ git add -A</span><br><span class="line">$ git commit -m &quot;20160721&quot; </span><br><span class="line">$ git remote add b1 https://github.com/Renchk/renchk.github.io.git </span><br><span class="line">$ git push -u origin9 master</span><br></pre></td></tr></table></figure>
+<p>After entering above codes, you will be asked to input username and password. Also, you can use following code to push your repo to github one time:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add -A;git commit -m &quot;Tony-20161005-Test10&quot;;git remote add Ac10 https://github.com/TonyRenHK/TonyRenHK.github.io.git;git push -u Ac10 master</span><br></pre></td></tr></table></figure>
+<p>Note: you need to change ‘<a href="https://github.com/TonyRenHK/TonyRenHK.github.io.git&#39;" target="_blank" rel="noopener">https://github.com/TonyRenHK/TonyRenHK.github.io.git&#39;</a> to your web URL.</p>
+<h2 id="How-to-preview-my-Blog-in-Cloud9"><a href="#How-to-preview-my-Blog-in-Cloud9" class="headerlink" title="How to preview my Blog in Cloud9?"></a>How to preview my Blog in Cloud9?</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">tonyrenhk:~/workspace (master) $ gem install jekyll gem install jekyll-sitemap gem install github-pages</span><br><span class="line"></span><br><span class="line">cd renchk.github.io</span><br><span class="line"></span><br><span class="line">jekyll serve --host 0.0.0.0 --port 8080</span><br></pre></td></tr></table></figure>
+<p>and I can preview here: <a href="https://demo-project-tonyrenhk.c9users.io/" target="_blank" rel="noopener">https://demo-project-tonyrenhk.c9users.io/</a></p>
 
         </div>
 
         <section class="meta">
-            <time class="time" itemprop="dateUpdated" datetime="2018-11-23T02:40:39+00:00" content="2018-11-23">
+            <time class="time" itemprop="dateUpdated" datetime="2018-11-23T06:17:49+00:00" content="2018-11-23">
                 <i class="fas fa-pen fa-fw" aria-hidden="true"></i>
                 Last updated Time：2018-11-23
             </time>
@@ -179,7 +177,7 @@
                 
                 <div class="tags">
                     <i class="fas fa-tags fa-fw" aria-hidden="true"></i>
-                    <a class="tag" href="/tags/Salesforce/">Salesforce</a>, <a class="tag" href="/tags/Apex/">Apex</a>, <a class="tag" href="/tags/SFDC/">SFDC</a>, <a class="tag" href="/tags/visualforce-Page/">visualforce Page</a>
+                    <a class="tag" href="/tags/Git/">Git</a>, <a class="tag" href="/tags/GitHub/">GitHub</a>
                 </div>
             
         </section>
@@ -191,9 +189,9 @@
                         <span class="art-item-left">
                             <h6><i class="fas fa-chevron-left" aria-hidden="true"></i>&nbsp;Previous Post</h6>
                             <h4>
-                                <a href="/2016/08/21/2016-08-21-Generate-Post-Name-Jekyll-Blog-quickly/" rel="prev" title="Generate Blog Post Name for Jekyll Blog quickly">
+                                <a href="/2016/08/25/2016-08-25-How-to-get-certain-days-month-end-day/" rel="prev" title="How to get certain days month end day?">
                                   
-                                      Generate Blog Post Name for Jekyll Blog quickly
+                                      How to get certain days month end day?
                                   
                                 </a>
                             </h4>
@@ -201,7 +199,7 @@
                                 
                                 <h6 class="tags">
                                     <i class="fas fa-tags fa-fw" aria-hidden="true"></i>
-                                    <a class="tag" href="/tags/JQuery/">JQuery</a>, <a class="tag" href="/tags/Html/">Html</a>, <a class="tag" href="/tags/Demo/">Demo</a>, <a class="tag" href="/tags/Single-Page-Application/">Single Page Application</a>
+                                    <a class="tag" href="/tags/Salesforce/">Salesforce</a>, <a class="tag" href="/tags/Apex/">Apex</a>, <a class="tag" href="/tags/SFDC/">SFDC</a>
                                 </h6>
                             
                         </span>
@@ -212,9 +210,9 @@
                         <span class="art-item-right" aria-hidden="true">
                             <h6>Next Post &nbsp;<i class="fas fa-chevron-right" aria-hidden="true"></i></h6>
                             <h4>
-                                <a href="/2014/01/02/2014-01-02-Project/" rel="prev" title="Project">
+                                <a href="/2016/08/23/2016-08-23-How-to-Tune-your-Essbase-BSO-Database/" rel="prev" title="How to Tune your Essbase BSO Database?">
                                     
-                                        Project
+                                        How to Tune your Essbase BSO Database?
                                     
                                 </a>
                             </h4>
@@ -222,7 +220,7 @@
                                 
                                 <h6 class="tags">
                                     <i class="fas fa-tags fa-fw" aria-hidden="true"></i>
-                                    <a class="tag" href="/tags/Project/">Project</a>
+                                    <a class="tag" href="/tags/Essbase/">Essbase</a>, <a class="tag" href="/tags/Database/">Database</a>
                                 </h6>
                             
                         </span>
@@ -249,15 +247,15 @@
         <h4><i class="fas fa-bookmark fa-fw" aria-hidden="true"></i>&nbsp;Recommended Posts:</h4>
         <ul>
             
-                <li><a href="https://renchk.github.io/2016/08/24/2016-08-24-Howtopushmycodetogithub/">Git Study Note</a></li>
+                <li><a href="https://renchk.github.io/2016/09/23/2016-09-23-JQuery-Input-only-input-one-field/">JQuery Input: only input one field.</a></li>
+            
+                <li><a href="https://renchk.github.io/2016/08/25/2016-08-25-How-to-get-certain-days-month-end-day/">How to get certain days month end day?</a></li>
             
                 <li><a href="https://renchk.github.io/2016/08/23/2016-08-23-How-to-Tune-your-Essbase-BSO-Database/">How to Tune your Essbase BSO Database?</a></li>
             
                 <li><a href="https://renchk.github.io/2016/08/21/2016-08-21-Generate-Post-Name-Jekyll-Blog-quickly/">Generate Blog Post Name for Jekyll Blog quickly</a></li>
             
-                <li><a href="https://renchk.github.io/2014/01/02/2014-01-02-Project/">Project</a></li>
-            
-                <li><a href="https://renchk.github.io/2014/01/01/2014-01-01-About-Me/">About Me</a></li>
+                <li><a href="https://renchk.github.io/2015/07/07/2015-07-07-How-to-add-Loading-Action-Status-when-Searching-in-Salesforce/">How to add &#39;Loading&#39; Action Status when Searching in Salesforce?</a></li>
             
         </ul>
     </div>
@@ -291,7 +289,7 @@
 
 <script>
     window.subData = {
-        title: 'How to add &#39;Loading&#39; Action Status when Searching in Salesforce?',
+        title: 'Git Study Note',
         tools: true
     }
 </script>
@@ -397,7 +395,7 @@
             <div class="wrapper"><a class="s-toc rightBtn" title="固定到顶部" target="_blank" rel="external nofollow noopener noreferrer" href="javascript:void(0)"><i class="fas fa-thumbtack fa-fw"></i></a></div>
         </header>
         <div class="content pure">
-            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Question"><span class="toc-text">Question</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Solution"><span class="toc-text">Solution</span></a></li></ol>
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Question"><span class="toc-text">Question</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#How-to-push-my-code-to-github"><span class="toc-text">How to push my code to github?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Follow-below-Code"><span class="toc-text">Follow below Code</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#How-to-preview-my-Blog-in-Cloud9"><span class="toc-text">How to preview my Blog in Cloud9?</span></a></li></ol>
         </div>
     </section>
 
