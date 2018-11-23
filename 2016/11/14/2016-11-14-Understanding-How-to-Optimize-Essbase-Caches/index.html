@@ -162,7 +162,7 @@
 <h3 id="SOLUTION"><a href="#SOLUTION" class="headerlink" title="SOLUTION"></a>SOLUTION</h3><p><strong>Understanding Cache Settings:</strong></p>
 <p>The sizes of the index cache and the data file cache (when direct I/O is used) are the most critical Essbase cache settings. In general, the larger these caches, the less swapping activity occurs; however, it does not always help performance to set cache sizes larger and larger. Read this entire section to understand cache size considerations.</p>
 <p><strong>Index Cache:</strong></p>
-<p>Whenever the index cache size equals or exceeds the index size (including all index files on all<br>volumes), performance does not improve. However, to account for future growth of the index, you can set the index cache size larger than the current index size.</p>
+<p>Whenever the index cache size equals or exceeds the index size (including all index files on all volumes), performance does not improve. However, to account for future growth of the index, you can set the index cache size larger than the current index size.</p>
 <p>Because the index cache is filled with index pages, for optimum use of storage, set the size of the index cache to be a multiple of the size of the index page (8 KB).</p>
 <p><strong>Data File Cache (Direct I/O only):</strong></p>
 <p>If possible, set the data file cache to equal the size of the stored data, which is the combined size of all ess*.pag files.</p>
@@ -188,7 +188,7 @@
         </div>
 
         <section class="meta">
-            <time class="time" itemprop="dateUpdated" datetime="2018-11-23T06:37:33+00:00" content="2018-11-23">
+            <time class="time" itemprop="dateUpdated" datetime="2018-11-23T06:38:45+00:00" content="2018-11-23">
                 <i class="fas fa-pen fa-fw" aria-hidden="true"></i>
                 Last updated Time：2018-11-23
             </time>
