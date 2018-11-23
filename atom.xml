@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://renchk.github.io/"/>
-  <updated>2018-11-23T06:28:50.091Z</updated>
+  <updated>2018-11-23T06:31:41.730Z</updated>
   <id>https://renchk.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Salesforce Apex sending email</title>
+    <link href="https://renchk.github.io/2016/11/10/2016-11-10-How-to-log-issue-in-SFDC-by-sending-email/"/>
+    <id>https://renchk.github.io/2016/11/10/2016-11-10-How-to-log-issue-in-SFDC-by-sending-email/</id>
+    <published>2016-11-10T00:00:00.000Z</published>
+    <updated>2018-11-23T06:31:41.730Z</updated>
+    
+    <content type="html"><![CDATA[<p>For example, how to log issue in SFDC by sending email?</p><a id="more"></a><h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>How to log issue in SFDC by sending email?</p><p>Sometimes, we may want to perform some data patch/execute  some batch job in salesforce Developer Console instead of Data loader. we may write some apex code in Developer Console ‘Anonymous Window’. To log the record, we may use ‘System.debug(‘somethings’);’ to print the information,but we can also use following method to save the log .</p><p>Debug–&gt;Open Execute Anonymous Window ( Ctrl+E)  </p><p><img src="https://raw.githubusercontent.com/TonyRenHK/Demo/master/Blog/2016-11-10%2013_50_48-Force.com%20Developer%20Console.png" alt="alt tag"></p><p>and then</p><p><img src="https://raw.githubusercontent.com/TonyRenHK/Demo/master/Blog/2016-11-10%2013_51_15-Force.com%20Developer%20Console.png" alt="alt tag"></p><p><strong>Sending Email Method</strong> </p><script src="//gist.github.com/67721ffcf9d7ed806d3fb521e3c62a15.js"></script><p><strong>Insert Record Method</strong></p><p>If we want to insert the log into one object, we can insert our log into Attachment also:</p><script src="//gist.github.com/fcec1bb7cdd4d2e1b23d929e683be81e.js"></script><p>Please note that we need to create object name ‘Log__c’ to save the record.</p><p>Any code samples provided here are purely for experimental purposes and comes with no warranty or support.  The primary purpose of this article is just to share the knowledge and my own experience. Nothing more, nothing less. Use this code and approach at your own risk.Please feel free to contact me (<a href="mailto:yamshingkwan@gmail.com" target="_blank" rel="noopener">yamshingkwan@gmail.com</a>) if you have any inquiry or the code have any problem. Thank you.</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;For example, how to log issue in SFDC by sending email?&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Salesforce" scheme="https://renchk.github.io/categories/Salesforce/"/>
+    
+    
+      <category term="Salesforce" scheme="https://renchk.github.io/tags/Salesforce/"/>
+    
+      <category term="Apex" scheme="https://renchk.github.io/tags/Apex/"/>
+    
+  </entry>
   
   <entry>
     <title>Bootstrap alert Example with pure css</title>
