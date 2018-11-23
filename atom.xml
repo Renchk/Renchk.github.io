@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://renchk.github.io/"/>
-  <updated>2018-11-23T04:02:14.646Z</updated>
+  <updated>2018-11-23T04:06:37.809Z</updated>
   <id>https://renchk.github.io/</id>
   
   <author>
@@ -18,18 +18,19 @@
   
   <entry>
     <title></title>
-    <link href="https://renchk.github.io/2018/11/23/2016-08-22-How-to-Tune-your-Essbase-BSO-Database/"/>
-    <id>https://renchk.github.io/2018/11/23/2016-08-22-How-to-Tune-your-Essbase-BSO-Database/</id>
-    <published>2018-11-23T04:02:14.646Z</published>
-    <updated>2018-11-23T04:02:14.646Z</updated>
+    <link href="https://renchk.github.io/2018/11/23/2016-08-23-How-to-Tune-your-Essbase-BSO-Database/"/>
+    <id>https://renchk.github.io/2018/11/23/2016-08-23-How-to-Tune-your-Essbase-BSO-Database/</id>
+    <published>2018-11-23T04:06:37.809Z</published>
+    <updated>2018-11-23T04:06:37.809Z</updated>
     
-    <content type="html"><![CDATA[<hr><p>layout: post<br>date:   2016-08-22<br>title:  “How to Tune your Essbase BSO Database”<br>categories: Essbase<br>tags:  </p><pre><code>- Essbase</code></pre><hr><p>Essbase BSO Database</p><a id="more"></a><h2 id="Question"><a href="#Question" class="headerlink" title="Question"></a>Question</h2><p>Top Ten Ways to Tune your Essbase BSO Database </p><h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>I use following PDF (Top Ten Ways to Tune your Essbase BSO Database.pdf) to tune my Essbase Database</p><iframe src="https://onedrive.live.com/embed?cid=6FC96947AEDEEFC0&resid=6FC96947AEDEEFC0%216051&authkey=ABCDMBKkUksxciM&em=2" width="100%" height="300" frameborder="0" allowfullscreen></iframe><p>Thanks for reading this article. Any code samples provided here are purely for experimental purposes. The primary purpose of this article is just to share the knowledge and my own experience. Nothing more, nothing less. Use this code and approach at your own risk.Please feel free to contact me (<a href="mailto:yamshingkwan@gmail.com" target="_blank" rel="noopener">yamshingkwan@gmail.com</a>) if you have any inquiry or the code have any problem. Thank you.</p>]]></content>
+    <content type="html"><![CDATA[<hr><p>layout: post<br>date:   2016-08-23<br>title:  How to Tune your Essbase BSO Database<br>categories: Essbase<br>tags:  </p><pre><code>- Essbase- Database</code></pre><hr><p>Essbase BSO Database</p><a id="more"></a><h2 id="Question"><a href="#Question" class="headerlink" title="Question"></a>Question</h2><p>Top Ten Ways to Tune your Essbase BSO Database </p><h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>I use following PDF (Top Ten Ways to Tune your Essbase BSO Database.pdf) to tune my Essbase Database</p><iframe src="https://onedrive.live.com/embed?cid=6FC96947AEDEEFC0&resid=6FC96947AEDEEFC0%216051&authkey=ABCDMBKkUksxciM&em=2" width="100%" height="300" frameborder="0" allowfullscreen></iframe><p>Thanks for reading this article. Any code samples provided here are purely for experimental purposes. The primary purpose of this article is just to share the knowledge and my own experience. Nothing more, nothing less. Use this code and approach at your own risk.Please feel free to contact me (<a href="mailto:yamshingkwan@gmail.com" target="_blank" rel="noopener">yamshingkwan@gmail.com</a>) if you have any inquiry or the code have any problem. Thank you.</p>]]></content>
     
     <summary type="html">
     
       &lt;hr&gt;
-&lt;p&gt;layout: post&lt;br&gt;date:   2016-08-22&lt;br&gt;title:  “How to Tune your Essbase BSO Database”&lt;br&gt;categories: Essbase&lt;br&gt;tags:  &lt;/p&gt;
+&lt;p&gt;layout: post&lt;br&gt;date:   2016-08-23&lt;br&gt;title:  How to Tune your Essbase BSO Database&lt;br&gt;categories: Essbase&lt;br&gt;tags:  &lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;- Essbase
+- Database
 &lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
 &lt;p&gt;Essbase BSO Database&lt;/p&gt;
     
