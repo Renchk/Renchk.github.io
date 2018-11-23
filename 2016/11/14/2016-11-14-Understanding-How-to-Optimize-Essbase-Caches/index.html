@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <title>Archives: 2015 | Tony Ren</title>
+  <title>Understanding How to Optimize Essbase Caches | Tony Ren</title>
   <meta name="HandheldFriendly" content="True">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <link rel="shortcut icon" href="https://raw.githubusercontent.com/TonyRenHK/TonyRenHK/master/Image/TonyRenBlog_favicon.ico">
@@ -130,71 +130,168 @@
     <div class="l_body">
     <div class='container clearfix'>
         <div class='l_main'>
-            
-	
-    <script>
-        window.subData= { title:'year : 2015'}
-    </script>
-
-
-<section class="post-list">
-    
-        <div class="post-wrapper">
-            <article class="post reveal ">
+            <article id="post-2016-11-14-Understanding-How-to-Optimize-Essbase-Caches" class="post white-box article-type-post" itemscope="" itemprop="blogPost">
     <section class="meta">
-        <h2 class="title">
-            <a href="/2015/07/07/2015-07-07-How-to-add-Loading-Action-Status-when-Searching-in-Salesforce/">
-                
-                    How to add &#39;Loading&#39; Action Status when Searching in Salesforce?
-                
-            </a>
-        </h2>
+        
+            <h1 class="title">Understanding How to Optimize Essbase Caches</h1>
+        
         <time class="time">
-            <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;2015-07-07
+            <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
+            2016-11-14
         </time>
+        <div class="browse"><i class="fas fa-eye fa-fw" aria-hidden="true"></i>
+          <span id="busuanzi_value_page_pv"><i class="fas fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span>
+        </div>
         
     
     <div class="cats">
         <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
-        <a class="categories" href="/categories/Salesforce/">Salesforce</a>
+        <a class="categories" href="/categories/Essbase/">Essbase</a>
     </div>
 
 
     </section>
 
     <section class="article typo">
-        <p>Solution for adding ‘Loading’ Action Status when Searching in Salesforce.</p>
-        
-            <div class="readmore">
-                <a href="/2015/07/07/2015-07-07-How-to-add-Loading-Action-Status-when-Searching-in-Salesforce/" class="flat-box">
-                    <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
-                    Read More
-                </a>
-            </div>
-        
 
-        
-            <div class="full-width auto-padding tags">
-                
-                    <a href="/tags/Salesforce/"><i class="fas fa-tag fa-fw"></i>&nbsp;Salesforce</a>
-                
-                    <a href="/tags/Apex/"><i class="fas fa-tag fa-fw"></i>&nbsp;Apex</a>
-                
-                    <a href="/tags/SFDC/"><i class="fas fa-tag fa-fw"></i>&nbsp;SFDC</a>
-                
-                    <a href="/tags/visualforce-Page/"><i class="fas fa-tag fa-fw"></i>&nbsp;visualforce Page</a>
-                
-            </div>
-        
-    </section>
-</article>
+        <div class="article-entry" itemprop="articleBody">
+            <p>Understanding How to Optimize Essbase Caches. (Doc ID 853231.1)</p>
+<a id="more"></a>
+<h2 id="APPLIES-TO"><a href="#APPLIES-TO" class="headerlink" title="APPLIES TO:"></a>APPLIES TO:</h2><p>Hyperion Essbase - Version 9.0.0.0.00 and later<br>Information in this document applies to any platform.(Checked for Relevance 28-May-2014)</p>
+<h2 id="GOAL"><a href="#GOAL" class="headerlink" title="GOAL"></a>GOAL</h2><p>Understanding Essbase Caches Settings.</p>
+<h3 id="SOLUTION"><a href="#SOLUTION" class="headerlink" title="SOLUTION"></a>SOLUTION</h3><p><strong>Understanding Cache Settings:</strong></p>
+<p>The sizes of the index cache and the data file cache (when direct I/O is used) are the most critical Essbase cache settings. In general, the larger these caches, the less swapping activity occurs; however, it does not always help performance to set cache sizes larger and larger. Read this entire section to understand cache size considerations.</p>
+<p><strong>Index Cache:</strong></p>
+<p>Whenever the index cache size equals or exceeds the index size (including all index files on all<br>volumes), performance does not improve. However, to account for future growth of the index, you can set the index cache size larger than the current index size.</p>
+<p>Because the index cache is filled with index pages, for optimum use of storage, set the size of the index cache to be a multiple of the size of the index page (8 KB).</p>
+<p><strong>Data File Cache (Direct I/O only):</strong></p>
+<p>If possible, set the data file cache to equal the size of the stored data, which is the combined size of all ess*.pag files.</p>
+<p>Otherwise, the data file cache should be as large as possible. If you want to account for future growth of stored data, you can set the data file cache size larger than the current size of stored data.<br>NOTE:  Direct I/O is deprecated in release 11.1.2.4</p>
+<p><strong>Data Cache:</strong></p>
+<p>The data cache should be about 0.125 times the data file cache. However, certain calculations require a larger data cache size. If many concurrent users are accessing different data blocks, this cache should be larger.</p>
+<p>The default setting is 3072K (in version 6.0 and higher).</p>
+<p>To find out how many blocks can fit into this cache, take your setting and divide it by your block size:</p>
+<p>Data Cache in K</p>
+<p>——————— = Number of blocks that can be allocated</p>
+<p>Block Size in K</p>
+<p>Compare this number with your CALCLOCKBLOCKDEFAULT setting. If this setting is 100 and your allocated block number is less than 100, you need to increase your data cache. The recommended size is 100 x 2 x block size (in K) which is enough to hold 100 blocks. Remember to stop and restart your database in order for the new settings to take effect.</p>
+<p>If your CALCLOCKBLOCKDEFAULT setting is 100 and your allocated block number is larger than 100, you need to change your CALCLOCKBLOCKDEFAULT setting to a higher number. Start by doubling it to 200. Set this in your essbase.cfg file. Remember, to stop and start the Essbase server agent (essbase.exe) process for those settings to take effect.</p>
+<p>Go back and look at your data cache setting. Make sure it is set high enough to hold 200 blocks (to calculate: 200 x 2 x block size in Kilobytes).</p>
+<p><strong>Checking Cache Hit Ratio:</strong></p>
+<p>Every cache has a “hit ratio.” The hit ratio indicates the percentage of time that a requested piece of information is available in the cache. You can check the hit ratio of the index cache, the data cache, and the data file cache to determine whether you need to increase the cache size.</p>
+<p>A higher hit ratio indicates that the data is in the cache more often. This improves performance because the requested data does not have to be retrieved from disk for the next process. A hit ratio of 1.0 indicates that every time data is requested, it is found in the cache. This is the maximum performance possible from a cache setting.</p>
+<p>The Hit Ratio on Index Cache setting indicates the Essbase Kernel success rate in locating index information in the index cache without having to retrieve another index page from disk.<br>The Hit Ratio on Data File Cache setting indicates the Essbase Kernel success rate in locating data file pages in the data file cache without having to retrieve the data file from disk.</p>
+<p>The Hit Ratio on Data Cache setting indicates the Essbase success rate in locating data blocks in the data cache without having to retrieve the block from the data file cache.</p>
+<p><strong>Reference:</strong></p>
+<p><a href="https://docs.oracle.com/cd/E12825_01/epm.111/esb_dbag/frameset.htm?dstcache.htm" target="_blank" rel="noopener">https://docs.oracle.com/cd/E12825_01/epm.111/esb_dbag/frameset.htm?dstcache.htm</a></p>
 
         </div>
-    
-</section>
+
+        <section class="meta">
+            <time class="time" itemprop="dateUpdated" datetime="2018-11-23T06:37:33+00:00" content="2018-11-23">
+                <i class="fas fa-pen fa-fw" aria-hidden="true"></i>
+                Last updated Time：2018-11-23
+            </time>
+            
+                
+                <div class="tags">
+                    <i class="fas fa-tags fa-fw" aria-hidden="true"></i>
+                    <a class="tag" href="/tags/Essbase/">Essbase</a>, <a class="tag" href="/tags/Oracle/">Oracle</a>
+                </div>
+            
+        </section>
+
+        
+            <div class="prev-next">
+                
+                
+                    <section class="next">
+                        <span class="art-item-right" aria-hidden="true">
+                            <h6>Next Post &nbsp;<i class="fas fa-chevron-right" aria-hidden="true"></i></h6>
+                            <h4>
+                                <a href="/2016/11/10/2016-11-10-How-to-log-issue-in-SFDC-by-sending-email/" rel="prev" title="Salesforce Apex sending email">
+                                    
+                                        Salesforce Apex sending email
+                                    
+                                </a>
+                            </h4>
+                            
+                                
+                                <h6 class="tags">
+                                    <i class="fas fa-tags fa-fw" aria-hidden="true"></i>
+                                    <a class="tag" href="/tags/Salesforce/">Salesforce</a>, <a class="tag" href="/tags/Apex/">Apex</a>
+                                </h6>
+                            
+                        </span>
+                    </section>
+                
+            </div>
+        
+
+    </section>
+
+</article>
+
+<br>
+
+<!-- 显示推荐文章和评论 -->
+
+    <article class="post white-box comments">
+        <section class="article typo">
+
+            
+                
+
+    <div class="recommended_posts">
+        <h4><i class="fas fa-bookmark fa-fw" aria-hidden="true"></i>&nbsp;Recommended Posts:</h4>
+        <ul>
+            
+                <li><a href="https://renchk.github.io/2016/11/10/2016-11-10-How-to-log-issue-in-SFDC-by-sending-email/">Salesforce Apex sending email</a></li>
+            
+                <li><a href="https://renchk.github.io/2016/10/05/2016-10-05-Bootstrap-alert-Example-with-pure-css/">Bootstrap alert Example with pure css</a></li>
+            
+                <li><a href="https://renchk.github.io/2016/09/23/2016-09-23-JQuery-Input-only-input-one-field/">JQuery Input: only input one field.</a></li>
+            
+                <li><a href="https://renchk.github.io/2016/08/25/2016-08-25-How-to-get-certain-days-month-end-day/">How to get certain days month end day?</a></li>
+            
+                <li><a href="https://renchk.github.io/2016/08/24/2016-08-24-Howtopushmycodetogithub/">Git Study Note</a></li>
+            
+        </ul>
+    </div>
 
 
+            
 
+            
+
+                
+
+                
+
+                
+                    
+                        <h4><i class="fas fa-comments fa-fw" aria-hidden="true"></i>&nbsp;Comments</h4>
+                        <section id="comments">
+                            <div id="valine_container" class="valine_thread">
+                                <i class="fas fa-spinner fa-spin fa-fw"></i>
+                            </div>
+                        </section>
+                        <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+                        <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+                    
+                
+            
+
+        </section>
+    </article>
+
+
+<script>
+    window.subData = {
+        title: 'Understanding How to Optimize Essbase Caches',
+        tools: true
+    }
+</script>
 
 
         </div>
@@ -291,6 +388,16 @@
     
     
         
+    <section class="m_widget toc-wrapper">
+        <header class="header pure">
+            <div><i class="fas fa-list fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;Content</div>
+            <div class="wrapper"><a class="s-toc rightBtn" title="固定到顶部" target="_blank" rel="external nofollow noopener noreferrer" href="javascript:void(0)"><i class="fas fa-thumbtack fa-fw"></i></a></div>
+        </header>
+        <div class="content pure">
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#APPLIES-TO"><span class="toc-text">APPLIES TO:</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#GOAL"><span class="toc-text">GOAL</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#SOLUTION"><span class="toc-text">SOLUTION</span></a></li></ol></li></ol>
+        </div>
+    </section>
+
 
     
     
@@ -391,6 +498,35 @@
 <script src="/js/search.js"></script>
 <script src="/js/app.js"></script>
 
+
+    
+    
+    
+        
+            <script>
+            var GUEST_INFO = ['nick','mail','link'];
+            var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+                return GUEST_INFO.indexOf(item) > -1
+            });
+            var notify = 'false' == true;
+            var verify = 'false' == true;
+            var valine = new Valine();
+            valine.init({
+                el: '#valine_container',
+                notify: notify,
+                verify: verify,
+                guest_info: guest_info,
+                appId: "VuRGmlrXY64EG2tySasn4jzF-gzGzoHsz",
+                appKey: "C2FxxmSPGwKNQl7PEg39s7ep",
+                placeholder: "Comment here~",
+                pageSize:'10',
+                avatar:'mp',
+                lang:'en',
+                highlight:''
+            })
+            </script>
+        
+    
 
 
     <script>setLoadingBarProgress(100);</script>
