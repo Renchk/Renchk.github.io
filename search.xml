@@ -3,23 +3,29 @@
   
     
     <entry>
-      <title>Project</title>
-      <link href="/2019/07/05/Project/"/>
-      <url>/2019/07/05/Project/</url>
+      <title>Generate Blog Post Name for Jekyll Blog quickly</title>
+      <link href="/2016/08/21/2016-08-21-Generate-Post-Name-Jekyll-Blog-quickly/"/>
+      <url>/2016/08/21/2016-08-21-Generate-Post-Name-Jekyll-Blog-quickly/</url>
       
-        <content type="html"><![CDATA[<p>Project List</p><a id="more"></a><h2 id="表急送"><a href="#表急送" class="headerlink" title="表急送"></a>表急送</h2><h3 id="官网"><a href="#官网" class="headerlink" title="官网"></a>官网</h3><p>官网 <a href="https://www.biaojisong.com" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+        <content type="html"><![CDATA[<p>Generating Blog Post Name using Javascript.</p><a id="more"></a><h2 id="Question"><a href="#Question" class="headerlink" title="Question"></a>Question</h2><p>How to Generate Blog Post Name for Jekyll Blog quickly?</p><h2 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h2><p>For example:</p><p>If you want to posy blog name ‘How to Discover Your Blogging Niche?’ in Jekyll, and the posy name should name as ‘2016-08-29-How-to-Discover-Your-Blogging-Niche.markdown’.</p><p>I write following code to let us quickly generate Post Name</p><p>Demo here:</p><p>The demo link: <a href="https://tony-ren-dev.github.io/demo/Jquery/Generate-Name.html" target="_blank" rel="noopener">Generate Post Name</a> </p><p>There are following Code:</p><p>Thanks for reading this article. Any code samples provided here are purely for experimental purposes. The primary purpose of this article is just to share the knowledge and my own experience. Nothing more, nothing less. Use this code and approach at your own risk.Please feel free to contact me (<a href="mailto:yamshingkwan@gmail.com" target="_blank" rel="noopener">yamshingkwan@gmail.com</a>) if you have any inquiry or the code have any problem. Thank you.</p>]]></content>
       
       
       <categories>
           
-          <category> Project </category>
+          <category> JQuery </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> Project </tag>
+            <tag> JQuery </tag>
+            
+            <tag> Html </tag>
+            
+            <tag> Demo </tag>
+            
+            <tag> Single Page Application </tag>
             
         </tags>
       
@@ -27,8 +33,8 @@
     
     <entry>
       <title>How to add &#39;Loading&#39; Action Status when Searching in Salesforce?</title>
-      <link href="/2017/07/07/2015-07-07-How-to-add-Loading-Action-Status-when-Searching-in-Salesforce/"/>
-      <url>/2017/07/07/2015-07-07-How-to-add-Loading-Action-Status-when-Searching-in-Salesforce/</url>
+      <link href="/2015/07/07/2015-07-07-How-to-add-Loading-Action-Status-when-Searching-in-Salesforce/"/>
+      <url>/2015/07/07/2015-07-07-How-to-add-Loading-Action-Status-when-Searching-in-Salesforce/</url>
       
         <content type="html"><![CDATA[<p>Solution for adding ‘Loading’ Action Status when Searching in Salesforce.</p><a id="more"></a><h2 id="Question"><a href="#Question" class="headerlink" title="Question"></a>Question</h2><p>How to add ‘Loading’ Action Status when Searching in Salesforce?</p><h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>How to add’Loading’ when searching?<br>The following code can be added in Visualforce page.<br>Firstly, we can write javascript code:</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$(document).on(&apos;mousemove&apos;, function(e)&#123;</span><br><span class="line">            $(&apos;#loadtext&apos;).css(&#123;</span><br><span class="line">               left:  e.pageX,</span><br><span class="line">               top:   e.pageY</span><br><span class="line">            &#125;);</span><br><span class="line">        &#125;);</span><br></pre></td></tr></table></figure><p>Apex Code in salesforce:</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;apex:actionstatus id=&quot;ActionStatus&quot;&gt;</span><br><span class="line">        &lt;apex:facet name=&quot;start&quot;&gt;</span><br><span class="line">            &lt;div class=&quot;waitingSearchDiv&quot; id=&quot;el_loading&quot; style=&quot;background-color: #fbfbfb;</span><br><span class="line">               height: 1000%; width:1000%; opacity:0.65;&quot;&gt; </span><br><span class="line">                &lt;div class=&quot;waitingHolder&quot; id=&quot;loadtext&quot; style=&quot;position: absolute;&quot; align=&quot;left&quot; valign=&quot;top&quot;&gt;</span><br><span class="line">                    &amp;nbsp;&amp;nbsp;&amp;nbsp;</span><br><span class="line">                    &lt;img class=&quot;waitingImage&quot; src=&quot;/img/loading.gif&quot; title=&quot;Please Wait...&quot; /&gt;</span><br><span class="line">                    &lt;span class=&quot;waitingDescription&quot;&gt;Please Wait...&lt;/span&gt;</span><br><span class="line">                &lt;/div&gt;</span><br><span class="line">            &lt;/div&gt;</span><br><span class="line">        &lt;/apex:facet&gt;</span><br><span class="line">    &lt;/apex:actionstatus&gt;</span><br></pre></td></tr></table></figure><p>And then we can write Searching Button:</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;apex:commandButton value=&quot;&lt;&lt;&quot; action=&quot;&#123;!firstPage&#125;&quot; reRender=&quot;results,debug,error,pagination&quot; status=&quot;ActionStatus&quot; /&gt;</span><br></pre></td></tr></table></figure><p>The Final result like this:</p><p><img src="https://raw.githubusercontent.com/TonyRenHK/Demo/master/Blog/2015-07-17%2016_33_53-salesforce.com%20-%20loading.png" alt="alt tag"></p><p>Any code samples provided here are purely for experimental purposes and comes with no warranty or support.  The primary purpose of this article is just to share the knowledge and my own experience. Nothing more, nothing less. Use this code and approach at your own risk.Please feel free to contact me (<a href="mailto:yamshingkwan@gmail.com" target="_blank" rel="noopener">yamshingkwan@gmail.com</a>) if you have any inquiry or the code have any problem. Thank you.</p>]]></content>
       
@@ -55,9 +61,32 @@
     </entry>
     
     <entry>
+      <title>Project</title>
+      <link href="/2014/01/02/2014-01-02-Project/"/>
+      <url>/2014/01/02/2014-01-02-Project/</url>
+      
+        <content type="html"><![CDATA[<p>Project List</p><a id="more"></a><h2 id="Daily-Note"><a href="#Daily-Note" class="headerlink" title="Daily Note"></a>Daily Note</h2><p>Daily Note using Google App Script</p><p>Daily Note <a href="https://script.google.com/macros/s/AKfycbxYJhxct6evZHWRUkgXk_ijuj0mgRbnMUf9xOn3IXi8iAFoPB70/exec" target="_blank" rel="noopener">Writing</a></p><h2 id="Bookmark-Management"><a href="#Bookmark-Management" class="headerlink" title="Bookmark Management"></a>Bookmark Management</h2><p>Bookmark Management using Google App Script</p><p>Daily Note <a href="https://script.google.com/macros/s/AKfycbyHMYAOOPsa8gfpAxZ7fdyNZoQPDTCDa4TnsuxIYuMFmpwDtmY/exec" target="_blank" rel="noopener">Writing</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Project </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Project </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>About Me</title>
-      <link href="/2017/07/05/About-Me/"/>
-      <url>/2017/07/05/About-Me/</url>
+      <link href="/2014/01/01/2014-01-01-About-Me/"/>
+      <url>/2014/01/01/2014-01-01-About-Me/</url>
       
         <content type="html"><![CDATA[<p>About Me</p><a id="more"></a><p>I am Tony Ren , Salesforce developer.</p><h2 id="Contact-Me"><a href="#Contact-Me" class="headerlink" title="Contact Me?"></a>Contact Me?</h2><ul><li>GitHub：<a href="https://github.com/Renchk" target="_blank" rel="noopener">Renchk</a></li><li>Email：<a href="mailto:renchk@foxmail.com" target="_blank" rel="noopener">renchk@foxmail.com</a></li><li><a href="https://plus.google.com/104700122819352899100" target="_blank" rel="noopener">Google ++</a></li><li><a href="https://hk.linkedin.com/in/tony-ren-hk" target="_blank" rel="noopener">LinkedIn</a></li><li><a href="http://renchk.blogspot.hk/" target="_blank" rel="noopener">Blogger</a></li><li><a href="https://www.youtube.com/channel/UCYKaW0KfHSuKw2SpqebLqeQ" target="_blank" rel="noopener">YouTube</a></li></ul>]]></content>
       
