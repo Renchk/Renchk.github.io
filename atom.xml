@@ -38,9 +38,9 @@
       <category term="Javascript" scheme="https://renchk.github.io/categories/Javascript/"/>
     
     
-      <category term="Javascript" scheme="https://renchk.github.io/tags/Javascript/"/>
-    
       <category term="jQuery" scheme="https://renchk.github.io/tags/jQuery/"/>
+    
+      <category term="Javascript" scheme="https://renchk.github.io/tags/Javascript/"/>
     
   </entry>
   
@@ -416,31 +416,33 @@
     
       <category term="HTML" scheme="https://renchk.github.io/tags/HTML/"/>
     
-      <category term="Bootstrap" scheme="https://renchk.github.io/tags/Bootstrap/"/>
-    
       <category term="CSS" scheme="https://renchk.github.io/tags/CSS/"/>
+    
+      <category term="Bootstrap" scheme="https://renchk.github.io/tags/Bootstrap/"/>
     
   </entry>
   
   <entry>
-    <title>JQuery Input: only input one field.</title>
+    <title>jQuery Input: only input one field.</title>
     <link href="https://renchk.github.io/2016/09/23/2016-09-23-JQuery-Input-only-input-one-field/"/>
     <id>https://renchk.github.io/2016/09/23/2016-09-23-JQuery-Input-only-input-one-field/</id>
     <published>2016-09-23T00:00:00.000Z</published>
-    <updated>2018-11-23T06:26:14.717Z</updated>
+    <updated>2018-11-23T08:39:12.542Z</updated>
     
-    <content type="html"><![CDATA[<p>HTML Demo</p><a id="more"></a><h2 id="Question"><a href="#Question" class="headerlink" title="Question"></a>Question</h2><p>JQuery Input: only input one field in HTML</p><h2 id="HTD"><a href="#HTD" class="headerlink" title="HTD"></a>HTD</h2><p>HTD=’How To Do’:</p><p>There are following Code:</p><script src="//gist.github.com/b3c1a1bd54546ca9fe6f92487d8df01c.js"></script><h2 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h2><iframe src="https://tony-ren-dev.github.io/demo/Jquery/JQuery-Input-only-input-one-field.html" width="700" height="100" frameborder="0" allowfullscreen></iframe><p>Thanks for reading this article. Any code samples provided here are purely for experimental purposes. The primary purpose of this article is just to share the knowledge and my own experience. Nothing more, nothing less. Use this code and approach at your own risk.Please feel free to contact me (<a href="mailto:yamshingkwan@gmail.com" target="_blank" rel="noopener">yamshingkwan@gmail.com</a>) if you have any inquiry or the code have any problem. Thank you.</p>]]></content>
+    <content type="html"><![CDATA[<p>HTML Demo using jQuery.</p><a id="more"></a><h2 id="jQuery-Input"><a href="#jQuery-Input" class="headerlink" title="jQuery Input"></a>jQuery Input</h2><p>jQuery Input: only input one field in HTML</p><h2 id="HTD"><a href="#HTD" class="headerlink" title="HTD"></a>HTD</h2><p>HTD=’How To Do’:</p><p>There are following Code:</p><script src="//gist.github.com/b3c1a1bd54546ca9fe6f92487d8df01c.js"></script><h2 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h2><iframe src="https://tony-ren-dev.github.io/demo/Jquery/JQuery-Input-only-input-one-field.html" width="700" height="100" frameborder="0" allowfullscreen></iframe><p>Thanks for reading this article. Any code samples provided here are purely for experimental purposes. The primary purpose of this article is just to share the knowledge and my own experience. Nothing more, nothing less. Use this code and approach at your own risk.Please feel free to contact me (<a href="mailto:yamshingkwan@gmail.com" target="_blank" rel="noopener">yamshingkwan@gmail.com</a>) if you have any inquiry or the code have any problem. Thank you.</p>]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;HTML Demo&lt;/p&gt;
+      &lt;p&gt;HTML Demo using jQuery.&lt;/p&gt;
     
     </summary>
     
-      <category term="JQuery" scheme="https://renchk.github.io/categories/JQuery/"/>
+      <category term="jQuery" scheme="https://renchk.github.io/categories/jQuery/"/>
     
     
-      <category term="JQuery" scheme="https://renchk.github.io/tags/JQuery/"/>
+      <category term="jQuery" scheme="https://renchk.github.io/tags/jQuery/"/>
+    
+      <category term="Javascript" scheme="https://renchk.github.io/tags/Javascript/"/>
     
       <category term="HTML" scheme="https://renchk.github.io/tags/HTML/"/>
     
