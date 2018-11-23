@@ -3,11 +3,38 @@
   
     
     <entry>
+      <title>Bootstrap alert Example with pure css</title>
+      <link href="/2016/10/05/2016-10-05-Bootstrap-alert-Example-with-pure-css/"/>
+      <url>/2016/10/05/2016-10-05-Bootstrap-alert-Example-with-pure-css/</url>
+      
+        <content type="html"><![CDATA[<p>Sometimes, Bootstrap cannot use in your environment, we can only use pure css in HTML.</p><a id="more"></a><h2 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h2><p>Sometimes, Bootstrap cannot use in your environment, We can use following code and the result can be like <a href="http://www.w3schools.com/bootstrap/bootstrap_alerts.asp" target="_blank" rel="noopener">http://www.w3schools.com/bootstrap/bootstrap_alerts.asp</a> :</p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html lang=<span class="string">"en"</span>&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;title&gt;Bootstrap alert Example with pure css &lt;/title&gt;</span><br><span class="line">    &lt;meta charset=<span class="string">"utf-8"</span>&gt;</span><br><span class="line">    &lt;meta name=<span class="string">"viewport"</span> content=<span class="string">"width=device-width, initial-scale=1"</span>&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;div class=<span class="string">"container"</span>&gt;</span><br><span class="line"></span><br><span class="line">        &lt;div style=<span class="string">"color: #3c763d;background-color: #dff0d8; border-color: #d6e9c6;padding: 15px; margin-bottom: 20px; border: 1px solid transparent; border-radius: 4px;"</span>&gt;</span><br><span class="line">            &lt;a href=<span class="string">"#"</span> style=<span class="string">" text-decoration: none; float: right; font-size: 21px; font-weight: 700; line-height: 1; color: #000; text-shadow: 0 1px 0 #fff; filter: alpha(opacity=20); opacity: .2;"</span> data-dismiss=<span class="string">"alert"</span> aria-label=<span class="string">"close"</span>&gt;&amp;<span class="built_in">times</span>;&lt;/a&gt;</span><br><span class="line">            &lt;strong&gt;Success!&lt;/strong&gt; This alert box could indicate a successful or positive action.</span><br><span class="line">        &lt;/div&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line"></span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure><p>the Above code is written with pure css.</p><p>The demo link: <a href="https://tonyrenhk.github.io/Demo/HTML/BootstrapAlert.html" target="_blank" rel="noopener">Demo</a> </p><p>Online Demo here:</p><iframe src="https://tonyrenhk.github.io/Demo/HTML/BootstrapAlert.html" width="700" height="100" frameborder="0" allowfullscreen></iframe><p>Thanks for reading this article. Any code samples provided here are purely for experimental purposes. The primary purpose of this article is just to share the knowledge and my own experience. Nothing more, nothing less. Use this code and approach at your own risk.Please feel free to contact me (<a href="mailto:yamshingkwan@gmail.com" target="_blank" rel="noopener">yamshingkwan@gmail.com</a>) if you have any inquiry or the code have any problem. Thank you.</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Bootstrap </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> HTML </tag>
+            
+            <tag> CSS </tag>
+            
+            <tag> Bootstrap </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>JQuery Input: only input one field.</title>
       <link href="/2016/09/23/2016-09-23-JQuery-Input-only-input-one-field/"/>
       <url>/2016/09/23/2016-09-23-JQuery-Input-only-input-one-field/</url>
       
-        <content type="html"><![CDATA[<p>HTML Demo</p><a id="more"></a><h2 id="Question"><a href="#Question" class="headerlink" title="Question"></a>Question</h2><p>JQuery Input: only input one field in HTML</p><h2 id="HTD"><a href="#HTD" class="headerlink" title="HTD"></a>HTD</h2><p>HTD=’How To Do’:</p><p>There are following Code:</p><script src="//gist.github.com/b3c1a1bd54546ca9fe6f92487d8df01c.js"></script><h2 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h2><iframe src="https://tony-ren-dev.github.io/demo/Jquery/JQuery-Input-only-input-one-field.html" width="700" height="150" frameborder="0" allowfullscreen></iframe><p>Thanks for reading this article. Any code samples provided here are purely for experimental purposes. The primary purpose of this article is just to share the knowledge and my own experience. Nothing more, nothing less. Use this code and approach at your own risk.Please feel free to contact me (<a href="mailto:yamshingkwan@gmail.com" target="_blank" rel="noopener">yamshingkwan@gmail.com</a>) if you have any inquiry or the code have any problem. Thank you.</p>]]></content>
+        <content type="html"><![CDATA[<p>HTML Demo</p><a id="more"></a><h2 id="Question"><a href="#Question" class="headerlink" title="Question"></a>Question</h2><p>JQuery Input: only input one field in HTML</p><h2 id="HTD"><a href="#HTD" class="headerlink" title="HTD"></a>HTD</h2><p>HTD=’How To Do’:</p><p>There are following Code:</p><script src="//gist.github.com/b3c1a1bd54546ca9fe6f92487d8df01c.js"></script><h2 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h2><iframe src="https://tony-ren-dev.github.io/demo/Jquery/JQuery-Input-only-input-one-field.html" width="700" height="100" frameborder="0" allowfullscreen></iframe><p>Thanks for reading this article. Any code samples provided here are purely for experimental purposes. The primary purpose of this article is just to share the knowledge and my own experience. Nothing more, nothing less. Use this code and approach at your own risk.Please feel free to contact me (<a href="mailto:yamshingkwan@gmail.com" target="_blank" rel="noopener">yamshingkwan@gmail.com</a>) if you have any inquiry or the code have any problem. Thank you.</p>]]></content>
       
       
       <categories>
@@ -21,7 +48,7 @@
             
             <tag> JQuery </tag>
             
-            <tag> Html </tag>
+            <tag> HTML </tag>
             
         </tags>
       
@@ -123,7 +150,7 @@
             
             <tag> JQuery </tag>
             
-            <tag> Html </tag>
+            <tag> HTMl </tag>
             
             <tag> Demo </tag>
             
@@ -186,7 +213,7 @@
     </entry>
     
     <entry>
-      <title>About Me</title>
+      <title>Project</title>
       <link href="/2014/01/01/2014-01-01-About-Me/"/>
       <url>/2014/01/01/2014-01-01-About-Me/</url>
       
