@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://renchk.github.io/"/>
-  <updated>2018-11-22T15:49:15.608Z</updated>
+  <updated>2018-11-23T01:39:08.467Z</updated>
   <id>https://renchk.github.io/</id>
   
   <author>
@@ -17,24 +17,24 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>项目</title>
-    <link href="https://renchk.github.io/2019/07/05/Product/"/>
-    <id>https://renchk.github.io/2019/07/05/Product/</id>
+    <title>Project</title>
+    <link href="https://renchk.github.io/2019/07/05/Project/"/>
+    <id>https://renchk.github.io/2019/07/05/Project/</id>
     <published>2019-07-05T00:00:00.000Z</published>
-    <updated>2018-11-22T15:49:15.608Z</updated>
+    <updated>2018-11-23T01:39:08.467Z</updated>
     
-    <content type="html"><![CDATA[<p>项目列表，不断更新中。</p><a id="more"></a><h2 id="表急送"><a href="#表急送" class="headerlink" title="表急送"></a>表急送</h2><h3 id="官网"><a href="#官网" class="headerlink" title="官网"></a>官网</h3><p>官网 <a href="https://www.biaojisong.com" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    <content type="html"><![CDATA[<p>Project List</p><a id="more"></a><h2 id="表急送"><a href="#表急送" class="headerlink" title="表急送"></a>表急送</h2><h3 id="官网"><a href="#官网" class="headerlink" title="官网"></a>官网</h3><p>官网 <a href="https://www.biaojisong.com" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;项目列表，不断更新中。&lt;/p&gt;
+      &lt;p&gt;Project List&lt;/p&gt;
     
     </summary>
     
-      <category term="Salesforce" scheme="https://renchk.github.io/categories/Salesforce/"/>
+      <category term="Project" scheme="https://renchk.github.io/categories/Project/"/>
     
     
-      <category term="项目" scheme="https://renchk.github.io/tags/%E9%A1%B9%E7%9B%AE/"/>
+      <category term="Project" scheme="https://renchk.github.io/tags/Project/"/>
     
   </entry>
   
