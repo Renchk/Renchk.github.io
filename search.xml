@@ -3,6 +3,171 @@
   
     
     <entry>
+      <title>Chrome Extension-copy the title and link in one time quickly</title>
+      <link href="/2017/10/10/2018-01-10-Chrome-Extensions-Link-and-Title-Copy/"/>
+      <url>/2017/10/10/2018-01-10-Chrome-Extensions-Link-and-Title-Copy/</url>
+      
+        <content type="html"><![CDATA[<p>Chrome Extension to copy the title and link in one time quickly</p><h2 id="Chrome-Extension"><a href="#Chrome-Extension" class="headerlink" title="Chrome Extension"></a>Chrome Extension</h2><p>Today, I will one Chrome Extension to copy the title and link in one time quickly.</p><p><img src="https://raw.githubusercontent.com/TonyRenHK/Demo/master/Blog/2018-01-10-Chrome-Extensions-Link-and-Title-Copy.PNG" alt="alt tag"></p><p>The related code:</p><p><a href="https://github.com/TonyRenHK/Link_Copy" target="_blank" rel="noopener">https://github.com/TonyRenHK/Link_Copy</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Chrome Extension </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Chrome-Extension English </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>How sync your salesforce code to Github/bitbucket?</title>
+      <link href="/2017/06/24/2017-06-24-How-sync-your-salesforce-code-to-Githubbitbucket/"/>
+      <url>/2017/06/24/2017-06-24-How-sync-your-salesforce-code-to-Githubbitbucket/</url>
+      
+        <content type="html"><![CDATA[<p>Learning Code version Management and Control.<br>How sync your salesforce code to Github/bitbucket?</p><a id="more"></a><h2 id="Situation"><a href="#Situation" class="headerlink" title="Situation"></a>Situation</h2><p>Version control, for most developers, is an absolute must in any professional setting. However, currently, in salesforce org, there dont have Code version Management/Control.<br>One solution is using plug-in(Subversion) for Eclipse, but it need the deveploer to install Eclipse in their local machine.</p><h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>Today, I will introduce one solution which is using unix+ nodejs to retrieve salesforce code and then push the code to Githut/Bitbucket.</p><p><strong>Method</strong></p><p>Firstly, I will setup my linux workspace, there, I use cloud9. Also, you can use your local machine.</p><p>Secondly, I will retrieve all code-related metadata in salesforce, this include lightning component, apex Component/Visual force page, class. and tigger .</p><p>Thirdly, I will push all related code to the Githut/Bitbucket.</p><p>All above steps will be like following.</p><p><img src="https://raw.githubusercontent.com/TonyRenHK/Demo/master/Blog/2017-06-24-How-sync-your-salesforce-code-to-Githubbitbucket.png" alt="alt tag"></p><p><strong>retrieve all Code-Related Metadata</strong></p><p>There, I use JSForce library to retrieve all Code-Related Metadata and object matadata.<br>Also you need to install related library in your machine</p><ul><li>npm install jsforce</li><li>npm install js-beautify</li><li>npm install mkdirp</li></ul><p>The related code:</p><script src="//gist.github.com/f4d3ed2a3a4ce3a22c256d224ad739bd.js"></script><p><strong>Cloning Repository and push the code to the Repository using shell script</strong></p><p>Firstly, I create shell script file named ‘Gitshell.sh’, I the shell script file, I will do following things:</p><ul><li>create one foler name ‘backup’.</li><li>Clone my Repository from Githut/Bitbucket in ‘backup’ foler.</li><li>Retrieve salesforce code from Sandbox/Production using nodejs JSForce.</li><li>Move the Retrieved code to the cloned Repository folder.</li><li>Push all related the changes to Githut/Bitbucket.</li></ul><p>The related code:</p><script src="//gist.github.com/f104481b045fde58e767c029b077a662.js"></script><p>You can run ‘bash Gitshell.sh’ Linux Terminal</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Salesforce </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Salesforce Apex bitbucket </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>Linux Study Tips/Notes</title>
+      <link href="/2017/05/24/2017-05-24-Linux-Study-TipsNotes/"/>
+      <url>/2017/05/24/2017-05-24-Linux-Study-TipsNotes/</url>
+      
+        <content type="html"><![CDATA[<p>Linux Study Tips/Notes</p><a id="more"></a><h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>I use Cloud 9 Linux workspace and following notes will be useful in linux env.</p><h4 id="Zipping-and-Unzipping-Files-under-Linux"><a href="#Zipping-and-Unzipping-Files-under-Linux" class="headerlink" title="Zipping and Unzipping Files under Linux"></a>Zipping and Unzipping Files under Linux</h4><p>install :<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo apt-get install zip unzip</span><br></pre></td></tr></table></figure></p><p>Unzip File<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ unzip data.zip</span><br></pre></td></tr></table></figure></p><p>Adding Password: only for direct folder</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">zip --encrypt secure.zip * </span><br><span class="line"> </span><br><span class="line">zip --encrypt secure.zip file</span><br></pre></td></tr></table></figure><p>This is more insecure, as the password is entered/shown as plain text: </p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">zip --password (password) file.zip files</span><br></pre></td></tr></table></figure><p>How To Archive All Files And Sub Folders In A Zip File </p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">zip -r *</span><br></pre></td></tr></table></figure><h4 id="How-To-Archive-All-Files-And-Sub-Folders-In-A-Zip-File-with-password"><a href="#How-To-Archive-All-Files-And-Sub-Folders-In-A-Zip-File-with-password" class="headerlink" title="How To Archive All Files And Sub Folders In A Zip File with password"></a>How To Archive All Files And Sub Folders In A Zip File with password</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">zip -r --encrypt secure.zip *</span><br></pre></td></tr></table></figure><p>Use the following command to uncompress a ZIP file: </p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">$ unzip secure.zip </span><br><span class="line"> </span><br><span class="line">Enter password: </span><br><span class="line">*** </span><br><span class="line">```  </span><br><span class="line">  </span><br><span class="line"></span><br><span class="line">#### How to download a file from a website via terminal?</span><br></pre></td></tr></table></figure><p>$ wget “<a href="https://github.com/github/git-lfs/releases/download/v1.1.0/git-lfs-linux-amd64-1.1.0.tar.gz&quot;" target="_blank" rel="noopener">https://github.com/github/git-lfs/releases/download/v1.1.0/git-lfs-linux-amd64-1.1.0.tar.gz&quot;</a> </p><p> <code>`</code></p><h4 id="Reference-Link"><a href="#Reference-Link" class="headerlink" title="Reference Link"></a>Reference Link</h4><p><a href="https://www.cyberciti.biz/tips/how-can-i-zipping-and-unzipping-files-under-linux.html" target="_blank" rel="noopener">https://www.cyberciti.biz/tips/how-can-i-zipping-and-unzipping-files-under-linux.html</a> </p><p><a href="https://www.lifewire.com/practical-examples-of-the-zip-command-2201158" target="_blank" rel="noopener">https://www.lifewire.com/practical-examples-of-the-zip-command-2201158</a> </p><p><a href="https://www.shellhacks.com/create-password-protected-zip-file-linux/" target="_blank" rel="noopener">https://www.shellhacks.com/create-password-protected-zip-file-linux/</a> </p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Linux </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Linux Notes </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>Computer Science Study E-Book Sharing</title>
+      <link href="/2017/03/27/2017-03-27-ComputerScienceStudyEbookSharing/"/>
+      <url>/2017/03/27/2017-03-27-ComputerScienceStudyEbookSharing/</url>
+      
+        <content type="html"><![CDATA[<p>I will share some Computer Science PDF</p><a id="more"></a><h2 id="Review"><a href="#Review" class="headerlink" title="Review"></a>Review</h2><p>I will share some Computer Science PDF like: Data Structures and Algorithms javascript.</p><h3 id="Data-Structures-And-Algorithms"><a href="#Data-Structures-And-Algorithms" class="headerlink" title="Data Structures And Algorithms"></a>Data Structures And Algorithms</h3><p>Now I will share following some books about Data Structures Algorithms which is used for studying only.</p><iframe src="https://onedrive.live.com/embed?cid=6FC96947AEDEEFC0&resid=6FC96947AEDEEFC0%216077&authkey=AAh0P8-u5_-QyVM&em=2" width="100%" height="600" frameborder="0" allowfullscreen></iframe><p>Or with the link : <a href="https://1drv.ms/b/s!AsDv3q5Haclvrz3n9beCtY5cIVoy" target="_blank" rel="noopener">https://1drv.ms/b/s!AsDv3q5Haclvrz3n9beCtY5cIVoy</a></p><h3 id="Eloquent-JavaScript-second-edition"><a href="#Eloquent-JavaScript-second-edition" class="headerlink" title="Eloquent JavaScript second edition"></a>Eloquent JavaScript second edition</h3><p>This is a book about JavaScript, programming, and the wonders of the digital.  </p><iframe src="https://onedrive.live.com/embed?cid=6FC96947AEDEEFC0&resid=6FC96947AEDEEFC0%216085&authkey=AOHxlDTA0WAV1Xs&em=2" width="100%" height="600" frameborder="0" allowfullscreen></iframe><p>Or with the link : <a href="https://1drv.ms/b/s!AsDv3q5Haclvr0X-h8Te5RX4VsDu" target="_blank" rel="noopener">https://1drv.ms/b/s!AsDv3q5Haclvr0X-h8Te5RX4VsDu</a></p><h3 id="Other-Books"><a href="#Other-Books" class="headerlink" title="Other Books"></a>Other Books</h3><p>Other books are here :</p><p><a href="https://github.com/TonyRenHK/EBook" target="_blank" rel="noopener">https://github.com/TonyRenHK/EBook</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Study </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Computer Science PDF </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>Salesforce Product Demo</title>
+      <link href="/2017/03/26/2017-03-26-Salesforce-Demo/"/>
+      <url>/2017/03/26/2017-03-26-Salesforce-Demo/</url>
+      
+        <content type="html"><![CDATA[<p>Salesforce Product Demo </p><a id="more"></a><h2 id="Review"><a href="#Review" class="headerlink" title="Review"></a>Review</h2><p>Now I will share some demo about Salesforce Product developed by me and my team which is used for studying only.</p><h3 id="Salesforce-connect-with-Office-365"><a href="#Salesforce-connect-with-Office-365" class="headerlink" title="Salesforce connect with Office 365"></a>Salesforce connect with Office 365</h3><div class="video-container"><iframe src="//www.youtube.com/embed/8cm7GssRjjE" frameborder="0" allowfullscreen></iframe></div><p>Or with the link: <a href="https://youtu.be/8cm7GssRjjE" target="_blank" rel="noopener">https://youtu.be/8cm7GssRjjE</a></p><p>Thanks for reading this article. Any code samples provided here are purely for experimental purposes. The primary purpose of this article is just to share the knowledge and my own experience. Nothing more, nothing less. Use this code and approach at your own risk.Please feel free to contact me (<a href="mailto:tonyrenhk@outlook.com" target="_blank" rel="noopener">tonyrenhk@outlook.com</a>) if you have any inquiry or the code have any problem. Thank you.</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Demo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Salesforce SFDC Demo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>Salesforce Study Book PDF</title>
+      <link href="/2017/03/21/2017-03-21-Salesforce-Study-Books/"/>
+      <url>/2017/03/21/2017-03-21-Salesforce-Study-Books/</url>
+      
+        <content type="html"><![CDATA[<p>Salesforce Study Book PDF</p><a id="more"></a><h2 id="Review"><a href="#Review" class="headerlink" title="Review"></a>Review</h2><p>Now I will share following some books about Salesforce Product which is used for studying only.</p><h3 id="Developer-Limits-Quick-Reference-share-PDF"><a href="#Developer-Limits-Quick-Reference-share-PDF" class="headerlink" title="Developer Limits Quick Reference share PDF"></a>Developer Limits Quick Reference share PDF</h3><iframe src="https://onedrive.live.com/embed?cid=6FC96947AEDEEFC0&resid=6FC96947AEDEEFC0%216055&authkey=ACHavWAKC4G2WXc&em=2" width="100%" height="600" frameborder="0" allowfullscreen></iframe><p>Or with the link : <a href="https://1drv.ms/b/s!AsDv3q5HaclvryeQlSxsOTq4l9OK" target="_blank" rel="noopener">https://1drv.ms/b/s!AsDv3q5HaclvryeQlSxsOTq4l9OK</a></p><p>Thanks for reading this article. Any code samples provided here are purely for experimental purposes. The primary purpose of this article is just to share the knowledge and my own experience. Nothing more, nothing less. Use this code and approach at your own risk.Please feel free to contact me (<a href="mailto:tonyrenhk@outlook.com" target="_blank" rel="noopener">tonyrenhk@outlook.com</a>) if you have any inquiry or the code have any problem. Thank you.</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Study </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Salesforce Study PDF </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>How to add bootstrap in apex:commandButton?</title>
+      <link href="/2017/03/06/2017-03-06-How-to-add-bootstrap-in-apex-commandButton/"/>
+      <url>/2017/03/06/2017-03-06-How-to-add-bootstrap-in-apex-commandButton/</url>
+      
+        <content type="html"><![CDATA[<p>Sometimes, we need to add css in apex:commandButton with bootstrap style.</p><a id="more"></a><h2 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h2><p>Sometimes, we need to add css in apex:commandButton with bootstrap style, however, there will have some conflictings between Bootstrap and visualforce css.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;apex:commandButton style=&quot;color: #fff; background-color: #5cb85c; border-color: #4cae4c;user-select: none; background-image: none; border: 1px solid transparent; border-radius: 4px; display: inline-block; padding: 6px 12px; margin-bottom: 0; font-size: 14px; font-weight: normal; line-height: 1.42857143; text-align: center; white-space: nowrap; vertical-align: middle; -ms-touch-action: manipulation; touch-action: manipulation;&quot; </span><br><span class="line">                        value=&quot;Upload&quot; id=&quot;theButton&quot; action=&quot;&#123;!uploadCSVByBatch&#125;&quot; rendered=&quot;&#123;!batchMode&#125;&quot; /&gt;</span><br></pre></td></tr></table></figure><p>And the result will be:</p><p><img src="https://raw.githubusercontent.com/TonyRenHK/TonyRen/master/Img/B/2017-03-06-How-to-add-bootstrap-in-apex-commandButton.JPG" alt="alt tag"></p><p>In normal case,</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;button type=&quot;button&quot; style=&quot;color: #fff; background-color: #f0ad4e; border-color: #eea236; display: inline-block; padding: 6px 12px; margin-bottom: 0; font-size: 14px; font-weight: 400; line-height: 1.42857143; text-align: center; white-space: nowrap;user-select: none; background-image: none; border: 1px solid transparent; border-radius: 4px;&quot; &gt; </span><br><span class="line">                Cancel </span><br><span class="line">            &lt;/button&gt;</span><br></pre></td></tr></table></figure><h2 id="Result"><a href="#Result" class="headerlink" title="Result"></a>Result</h2><p>And the result will be:</p><p><img src="https://raw.githubusercontent.com/TonyRenHK/TonyRen/master/Img/B/2017-03-06-How-to-add-bootstrap-in-apex-commandButton2.JPG" alt="alt tag"></p><p>Besides,  this css style can also add in input with button type.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;input type=&quot;button&quot; onclick=&quot;&#123;!c.deleteLine&#125;&quot; id=&quot;&#123;!&apos;Delete_&apos;+line.Id&#125;&quot; value=&quot;Delete&quot; &gt; &lt;/input&gt;</span><br></pre></td></tr></table></figure><h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><p>  *Bootstrap W3C: <a href="https://www.w3schools.com/bootstrap/" target="_blank" rel="noopener">W3schools Bootstrap</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> bootstrap </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Salesforce </tag>
+            
+            <tag> Apex </tag>
+            
+            <tag> Bootstrap </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>Testing email template in SFDC Anonymous Window</title>
       <link href="/2017/03/05/2017-03-05-How-to-Testing-email-template-in-SFDC-Anonymous-Window/"/>
       <url>/2017/03/05/2017-03-05-How-to-Testing-email-template-in-SFDC-Anonymous-Window/</url>
