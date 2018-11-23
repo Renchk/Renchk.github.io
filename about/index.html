@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <title>Categories | Tony Ren</title>
+  <title>about | Tony Ren</title>
   <meta name="HandheldFriendly" content="True">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <link rel="shortcut icon" href="https://raw.githubusercontent.com/TonyRenHK/TonyRenHK/master/Image/TonyRenBlog_favicon.ico">
@@ -133,7 +133,7 @@
             <article id="page-" class="post white-box article-type-page" itemscope="" itemprop="blogPost">
     <section class="meta">
         
-            <h1 class="title">Categories</h1>
+            <h1 class="title">about</h1>
         
         <time class="time">
             <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
@@ -153,7 +153,7 @@
         </div>
 
         <section class="meta">
-            <time class="time" itemprop="dateUpdated" datetime="2018-11-23T09:59:01+00:00" content="2018-11-23">
+            <time class="time" itemprop="dateUpdated" datetime="2018-11-23T09:59:12+00:00" content="2018-11-23">
                 <i class="fas fa-pen fa-fw" aria-hidden="true"></i>
                 Last updated Time：2018-11-23
             </time>
@@ -181,13 +181,31 @@
 
             
 
+                
+
+                
+
+                
+                    
+                        <h4><i class="fas fa-comments fa-fw" aria-hidden="true"></i>&nbsp;Comments</h4>
+                        <section id="comments">
+                            <div id="valine_container" class="valine_thread">
+                                <i class="fas fa-spinner fa-spin fa-fw"></i>
+                            </div>
+                        </section>
+                        <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+                        <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+                    
+                
+            
+
         </section>
     </article>
 
 
 <script>
     window.subData = {
-        title: 'Categories',
+        title: 'about',
         tools: true
     }
 </script>
@@ -404,6 +422,35 @@
 <script src="/js/search.js"></script>
 <script src="/js/app.js"></script>
 
+
+    
+    
+    
+        
+            <script>
+            var GUEST_INFO = ['nick','mail','link'];
+            var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+                return GUEST_INFO.indexOf(item) > -1
+            });
+            var notify = 'false' == true;
+            var verify = 'false' == true;
+            var valine = new Valine();
+            valine.init({
+                el: '#valine_container',
+                notify: notify,
+                verify: verify,
+                guest_info: guest_info,
+                appId: "VuRGmlrXY64EG2tySasn4jzF-gzGzoHsz",
+                appKey: "C2FxxmSPGwKNQl7PEg39s7ep",
+                placeholder: "Comment here~",
+                pageSize:'10',
+                avatar:'mp',
+                lang:'en',
+                highlight:''
+            })
+            </script>
+        
+    
 
 
     <script>setLoadingBarProgress(100);</script>
