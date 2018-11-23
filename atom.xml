@@ -156,9 +156,9 @@
       <category term="Demo" scheme="https://renchk.github.io/categories/Demo/"/>
     
     
-      <category term="Demo" scheme="https://renchk.github.io/tags/Demo/"/>
-    
       <category term="Salesforce" scheme="https://renchk.github.io/tags/Salesforce/"/>
+    
+      <category term="Demo" scheme="https://renchk.github.io/tags/Demo/"/>
     
   </entry>
   
@@ -286,9 +286,9 @@
     
       <category term="HTML" scheme="https://renchk.github.io/tags/HTML/"/>
     
-      <category term="Demo" scheme="https://renchk.github.io/tags/Demo/"/>
-    
       <category term="JavaScript" scheme="https://renchk.github.io/tags/JavaScript/"/>
+    
+      <category term="Demo" scheme="https://renchk.github.io/tags/Demo/"/>
     
   </entry>
   
@@ -436,11 +436,11 @@
       <category term="jQuery" scheme="https://renchk.github.io/categories/jQuery/"/>
     
     
+      <category term="HTML" scheme="https://renchk.github.io/tags/HTML/"/>
+    
       <category term="jQuery" scheme="https://renchk.github.io/tags/jQuery/"/>
     
       <category term="Javascript" scheme="https://renchk.github.io/tags/Javascript/"/>
-    
-      <category term="HTML" scheme="https://renchk.github.io/tags/HTML/"/>
     
   </entry>
   
