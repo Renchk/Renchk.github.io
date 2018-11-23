@@ -96,9 +96,9 @@
       
         <tags>
             
-            <tag> Demo </tag>
-            
             <tag> Salesforce </tag>
+            
+            <tag> Demo </tag>
             
         </tags>
       
@@ -531,7 +531,7 @@
       <link href="/2014/01/02/2014-01-02-Project/"/>
       <url>/2014/01/02/2014-01-02-Project/</url>
       
-        <content type="html"><![CDATA[<p>Project List</p><a id="more"></a><h2 id="Daily-Note"><a href="#Daily-Note" class="headerlink" title="Daily Note"></a>Daily Note</h2><p>Daily Note using Google App Script</p><p>Daily Note : <a href="https://script.google.com/macros/s/AKfycbxYJhxct6evZHWRUkgXk_ijuj0mgRbnMUf9xOn3IXi8iAFoPB70/exec" target="_blank" rel="noopener">Link</a></p><h2 id="Bookmark-Management"><a href="#Bookmark-Management" class="headerlink" title="Bookmark Management"></a>Bookmark Management</h2><p>Bookmark Management using Google App Script</p><p>Daily Note : <a href="https://script.google.com/macros/s/AKfycbyHMYAOOPsa8gfpAxZ7fdyNZoQPDTCDa4TnsuxIYuMFmpwDtmY/exec" target="_blank" rel="noopener">Link</a></p><h2 id="Generate-Blog-Post-Name-Online"><a href="#Generate-Blog-Post-Name-Online" class="headerlink" title="Generate Blog Post Name Online"></a>Generate Blog Post Name Online</h2><p>Generating Blog Post Name using Javascript.: <a href="https://renchk.github.io/2016/08/21/2016-08-21-Generate-Post-Name-Jekyll-Blog-quickly/">Link</a></p>]]></content>
+        <content type="html"><![CDATA[<p>Project List</p><a id="more"></a><h2 id="Chrome-Extension"><a href="#Chrome-Extension" class="headerlink" title="Chrome Extension:"></a>Chrome Extension:</h2><p>Copy the title and link with one click <a href="https://github.com/TonyRenHK/Link_Copy" target="_blank" rel="noopener">Code</a></p><p>Blog Link :<a href="https://renchk.github.io/2017/10/10/2018-01-10-Chrome-Extensions-Link-and-Title-Copy/">https://renchk.github.io/2017/10/10/2018-01-10-Chrome-Extensions-Link-and-Title-Copy/</a></p><h2 id="Daily-Note"><a href="#Daily-Note" class="headerlink" title="Daily Note"></a>Daily Note</h2><p>Daily Note using Google App Script</p><p>Daily Note : <a href="https://script.google.com/macros/s/AKfycbxYJhxct6evZHWRUkgXk_ijuj0mgRbnMUf9xOn3IXi8iAFoPB70/exec" target="_blank" rel="noopener">Link</a></p><h2 id="Bookmark-Management"><a href="#Bookmark-Management" class="headerlink" title="Bookmark Management"></a>Bookmark Management</h2><p>Bookmark Management using Google App Script</p><p>Daily Note : <a href="https://script.google.com/macros/s/AKfycbyHMYAOOPsa8gfpAxZ7fdyNZoQPDTCDa4TnsuxIYuMFmpwDtmY/exec" target="_blank" rel="noopener">Link</a></p><h2 id="Generate-Blog-Post-Name-Online"><a href="#Generate-Blog-Post-Name-Online" class="headerlink" title="Generate Blog Post Name Online"></a>Generate Blog Post Name Online</h2><p>Generating Blog Post Name using Javascript.: <a href="https://renchk.github.io/2016/08/21/2016-08-21-Generate-Post-Name-Jekyll-Blog-quickly/">Link</a></p>]]></content>
       
       
       <categories>
