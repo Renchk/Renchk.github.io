@@ -7,7 +7,7 @@
       <link href="/2018/11/23/2018-11-23-Javascript-Study-Notes/"/>
       <url>/2018/11/23/2018-11-23-Javascript-Study-Notes/</url>
       
-        <content type="html"><![CDATA[<p>Some useful tips like<br>Format JavaScript Date to yyyy-mm-dd</p><h2 id="Format-JavaScript-Date-to-yyyy-mm-dd"><a href="#Format-JavaScript-Date-to-yyyy-mm-dd" class="headerlink" title="Format JavaScript Date to yyyy-mm-dd"></a>Format JavaScript Date to yyyy-mm-dd</h2><pre><code>function formatDate(date) { //Format JavaScript Date to yyyy-mm-dd     var d = new Date(date),month = &apos;&apos; + (d.getMonth() + 1),day = &apos;&apos; + d.getDate(),year = d.getFullYear();     if (month.length &lt; 2) month = &apos;0&apos; + month;     if (day.length &lt; 2) day = &apos;0&apos; + day;     return [year, month, day].join(&apos;-&apos;); }</code></pre><h2 id="How-to-run-jQuery-directly-on-any-page-in-the-browser"><a href="#How-to-run-jQuery-directly-on-any-page-in-the-browser" class="headerlink" title="How to run jQuery directly on any page in the browser?"></a>How to run jQuery directly on any page in the browser?</h2><pre><code>var body = document.getElementsByTagName(&quot;body&quot;)[0]; var script = document.createElement(&apos;script&apos;); script.type = &quot;text/javascript&quot;; script.src = &quot;http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js&quot;; body.appendChild(script);</code></pre>]]></content>
+        <content type="html"><![CDATA[<p>Some useful tips like<br>Format JavaScript Date to yyyy-mm-dd</p><a id="more"></a><h2 id="Format-JavaScript-Date-to-yyyy-mm-dd"><a href="#Format-JavaScript-Date-to-yyyy-mm-dd" class="headerlink" title="Format JavaScript Date to yyyy-mm-dd"></a>Format JavaScript Date to yyyy-mm-dd</h2><pre><code>function formatDate(date) { //Format JavaScript Date to yyyy-mm-dd     var d = new Date(date),month = &apos;&apos; + (d.getMonth() + 1),day = &apos;&apos; + d.getDate(),year = d.getFullYear();     if (month.length &lt; 2) month = &apos;0&apos; + month;     if (day.length &lt; 2) day = &apos;0&apos; + day;     return [year, month, day].join(&apos;-&apos;); }</code></pre><h2 id="How-to-run-jQuery-directly-on-any-page-in-the-browser"><a href="#How-to-run-jQuery-directly-on-any-page-in-the-browser" class="headerlink" title="How to run jQuery directly on any page in the browser?"></a>How to run jQuery directly on any page in the browser?</h2><pre><code>var body = document.getElementsByTagName(&quot;body&quot;)[0]; var script = document.createElement(&apos;script&apos;); script.type = &quot;text/javascript&quot;; script.src = &quot;http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js&quot;; body.appendChild(script);</code></pre>]]></content>
       
       
       <categories>
@@ -69,9 +69,9 @@
       
         <tags>
             
-            <tag> Salesforce </tag>
-            
             <tag> Apex </tag>
+            
+            <tag> Salesforce </tag>
             
             <tag> JSForce </tag>
             
@@ -198,9 +198,9 @@
       
         <tags>
             
-            <tag> Salesforce </tag>
-            
             <tag> Apex </tag>
+            
+            <tag> Salesforce </tag>
             
             <tag> Bootstrap </tag>
             
@@ -306,13 +306,13 @@
       
         <tags>
             
-            <tag> Salesforce </tag>
-            
             <tag> Apex </tag>
             
-            <tag> TriggerClass </tag>
+            <tag> Salesforce </tag>
             
             <tag> sending-email </tag>
+            
+            <tag> TriggerClass </tag>
             
         </tags>
       
@@ -385,9 +385,9 @@
       
         <tags>
             
-            <tag> Salesforce </tag>
-            
             <tag> Apex </tag>
+            
+            <tag> Salesforce </tag>
             
         </tags>
       
@@ -464,9 +464,9 @@
       
         <tags>
             
-            <tag> Salesforce </tag>
-            
             <tag> Apex </tag>
+            
+            <tag> Salesforce </tag>
             
         </tags>
       
@@ -570,9 +570,9 @@
       
         <tags>
             
-            <tag> Salesforce </tag>
-            
             <tag> Apex </tag>
+            
+            <tag> Salesforce </tag>
             
             <tag> visualforce Page </tag>
             
