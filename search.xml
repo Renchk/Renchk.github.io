@@ -7,19 +7,21 @@
       <link href="/2017/10/10/2018-01-10-Chrome-Extensions-Link-and-Title-Copy/"/>
       <url>/2017/10/10/2018-01-10-Chrome-Extensions-Link-and-Title-Copy/</url>
       
-        <content type="html"><![CDATA[<p>Chrome Extension to copy the title and link in one time quickly</p><h2 id="Chrome-Extension"><a href="#Chrome-Extension" class="headerlink" title="Chrome Extension"></a>Chrome Extension</h2><p>Today, I will one Chrome Extension to copy the title and link in one time quickly.</p><p><img src="https://raw.githubusercontent.com/TonyRenHK/Demo/master/Blog/2018-01-10-Chrome-Extensions-Link-and-Title-Copy.PNG" alt="alt tag"></p><p>The related code:</p><p><a href="https://github.com/TonyRenHK/Link_Copy" target="_blank" rel="noopener">https://github.com/TonyRenHK/Link_Copy</a></p>]]></content>
+        <content type="html"><![CDATA[<p>Chrome Extension demo</p><a id="more"></a><h2 id="Chrome-Extension"><a href="#Chrome-Extension" class="headerlink" title="Chrome Extension"></a>Chrome Extension</h2><p>Today, I will one Chrome Extension to copy the title and link in one time quickly.</p><p><img src="https://raw.githubusercontent.com/TonyRenHK/Demo/master/Blog/2018-01-10-Chrome-Extensions-Link-and-Title-Copy.PNG" alt="alt tag"></p><p>The related code:</p><p><a href="https://github.com/TonyRenHK/Link_Copy" target="_blank" rel="noopener">https://github.com/TonyRenHK/Link_Copy</a></p>]]></content>
       
       
       <categories>
           
-          <category> Chrome Extension </category>
+          <category> Google </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> Chrome-Extension English </tag>
+            <tag> Demo </tag>
+            
+            <tag> Chrome-Extension </tag>
             
         </tags>
       
@@ -42,7 +44,13 @@
       
         <tags>
             
-            <tag> Salesforce Apex bitbucket </tag>
+            <tag> Salesforce </tag>
+            
+            <tag> Apex </tag>
+            
+            <tag> JSForce </tag>
+            
+            <tag> bitbucket </tag>
             
         </tags>
       
@@ -65,7 +73,7 @@
       
         <tags>
             
-            <tag> Linux Notes </tag>
+            <tag> Linux </tag>
             
         </tags>
       
@@ -88,7 +96,9 @@
       
         <tags>
             
-            <tag> Computer Science PDF </tag>
+            <tag> Study </tag>
+            
+            <tag> E-Book </tag>
             
         </tags>
       
@@ -111,7 +121,9 @@
       
         <tags>
             
-            <tag> Salesforce SFDC Demo </tag>
+            <tag> Salesforce </tag>
+            
+            <tag> Demo </tag>
             
         </tags>
       
@@ -127,14 +139,18 @@
       
       <categories>
           
-          <category> Study </category>
+          <category> Salesforce </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> Salesforce Study PDF </tag>
+            <tag> Salesforce </tag>
+            
+            <tag> Study </tag>
+            
+            <tag> E-Book </tag>
             
         </tags>
       
@@ -269,9 +285,9 @@
             
             <tag> Apex </tag>
             
-            <tag> TriggerClass </tag>
-            
             <tag> sending-email </tag>
+            
+            <tag> TriggerClass </tag>
             
         </tags>
       
