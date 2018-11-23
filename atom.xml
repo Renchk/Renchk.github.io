@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://renchk.github.io/"/>
-  <updated>2018-11-23T07:32:33.306Z</updated>
+  <updated>2018-11-23T07:33:28.579Z</updated>
   <id>https://renchk.github.io/</id>
   
   <author>
@@ -17,17 +17,17 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Chrome Extension-copy the title and link in one time quickly</title>
+    <title>Chrome Extension copy the title and link</title>
     <link href="https://renchk.github.io/2017/10/10/2018-01-10-Chrome-Extensions-Link-and-Title-Copy/"/>
     <id>https://renchk.github.io/2017/10/10/2018-01-10-Chrome-Extensions-Link-and-Title-Copy/</id>
     <published>2017-10-10T00:00:00.000Z</published>
-    <updated>2018-11-23T07:32:33.306Z</updated>
+    <updated>2018-11-23T07:33:28.579Z</updated>
     
-    <content type="html"><![CDATA[<p>Chrome Extension demo</p><a id="more"></a><h2 id="Chrome-Extension"><a href="#Chrome-Extension" class="headerlink" title="Chrome Extension"></a>Chrome Extension</h2><p>Today, I will one Chrome Extension to copy the title and link in one time quickly.</p><p><img src="https://raw.githubusercontent.com/TonyRenHK/Demo/master/Blog/2018-01-10-Chrome-Extensions-Link-and-Title-Copy.PNG" alt="alt tag"></p><p>The related code:</p><p><a href="https://github.com/TonyRenHK/Link_Copy" target="_blank" rel="noopener">https://github.com/TonyRenHK/Link_Copy</a></p>]]></content>
+    <content type="html"><![CDATA[<p>Chrome Extension demoe to copy the title and link in one time quickly</p><a id="more"></a><h2 id="Chrome-Extension"><a href="#Chrome-Extension" class="headerlink" title="Chrome Extension"></a>Chrome Extension</h2><p>Today, I will one Chrome Extension to copy the title and link in one time quickly.</p><p><img src="https://raw.githubusercontent.com/TonyRenHK/Demo/master/Blog/2018-01-10-Chrome-Extensions-Link-and-Title-Copy.PNG" alt="alt tag"></p><p>The related code:</p><p><a href="https://github.com/TonyRenHK/Link_Copy" target="_blank" rel="noopener">https://github.com/TonyRenHK/Link_Copy</a></p>]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;Chrome Extension demo&lt;/p&gt;
+      &lt;p&gt;Chrome Extension demoe to copy the title and link in one time quickly&lt;/p&gt;
     
     </summary>
     
@@ -134,9 +134,9 @@
       <category term="Demo" scheme="https://renchk.github.io/categories/Demo/"/>
     
     
-      <category term="Demo" scheme="https://renchk.github.io/tags/Demo/"/>
-    
       <category term="Salesforce" scheme="https://renchk.github.io/tags/Salesforce/"/>
+    
+      <category term="Demo" scheme="https://renchk.github.io/tags/Demo/"/>
     
   </entry>
   
@@ -316,9 +316,9 @@
       <category term="Essbase" scheme="https://renchk.github.io/categories/Essbase/"/>
     
     
-      <category term="Oracle" scheme="https://renchk.github.io/tags/Oracle/"/>
-    
       <category term="Essbase" scheme="https://renchk.github.io/tags/Essbase/"/>
+    
+      <category term="Oracle" scheme="https://renchk.github.io/tags/Oracle/"/>
     
   </entry>
   
@@ -340,9 +340,9 @@
       <category term="Essbase" scheme="https://renchk.github.io/categories/Essbase/"/>
     
     
-      <category term="Oracle" scheme="https://renchk.github.io/tags/Oracle/"/>
-    
       <category term="Essbase" scheme="https://renchk.github.io/tags/Essbase/"/>
+    
+      <category term="Oracle" scheme="https://renchk.github.io/tags/Oracle/"/>
     
   </entry>
   

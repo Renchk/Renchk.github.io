@@ -3,11 +3,11 @@
   
     
     <entry>
-      <title>Chrome Extension-copy the title and link in one time quickly</title>
+      <title>Chrome Extension copy the title and link</title>
       <link href="/2017/10/10/2018-01-10-Chrome-Extensions-Link-and-Title-Copy/"/>
       <url>/2017/10/10/2018-01-10-Chrome-Extensions-Link-and-Title-Copy/</url>
       
-        <content type="html"><![CDATA[<p>Chrome Extension demo</p><a id="more"></a><h2 id="Chrome-Extension"><a href="#Chrome-Extension" class="headerlink" title="Chrome Extension"></a>Chrome Extension</h2><p>Today, I will one Chrome Extension to copy the title and link in one time quickly.</p><p><img src="https://raw.githubusercontent.com/TonyRenHK/Demo/master/Blog/2018-01-10-Chrome-Extensions-Link-and-Title-Copy.PNG" alt="alt tag"></p><p>The related code:</p><p><a href="https://github.com/TonyRenHK/Link_Copy" target="_blank" rel="noopener">https://github.com/TonyRenHK/Link_Copy</a></p>]]></content>
+        <content type="html"><![CDATA[<p>Chrome Extension demoe to copy the title and link in one time quickly</p><a id="more"></a><h2 id="Chrome-Extension"><a href="#Chrome-Extension" class="headerlink" title="Chrome Extension"></a>Chrome Extension</h2><p>Today, I will one Chrome Extension to copy the title and link in one time quickly.</p><p><img src="https://raw.githubusercontent.com/TonyRenHK/Demo/master/Blog/2018-01-10-Chrome-Extensions-Link-and-Title-Copy.PNG" alt="alt tag"></p><p>The related code:</p><p><a href="https://github.com/TonyRenHK/Link_Copy" target="_blank" rel="noopener">https://github.com/TonyRenHK/Link_Copy</a></p>]]></content>
       
       
       <categories>
@@ -123,9 +123,9 @@
       
         <tags>
             
-            <tag> Demo </tag>
-            
             <tag> Salesforce </tag>
+            
+            <tag> Demo </tag>
             
         </tags>
       
@@ -312,9 +312,9 @@
       
         <tags>
             
-            <tag> Oracle </tag>
-            
             <tag> Essbase </tag>
+            
+            <tag> Oracle </tag>
             
         </tags>
       
@@ -337,9 +337,9 @@
       
         <tags>
             
-            <tag> Oracle </tag>
-            
             <tag> Essbase </tag>
+            
+            <tag> Oracle </tag>
             
         </tags>
       
