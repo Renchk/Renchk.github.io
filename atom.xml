@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://renchk.github.io/"/>
-  <updated>2018-11-23T08:31:44.266Z</updated>
+  <updated>2018-11-23T08:37:26.496Z</updated>
   <id>https://renchk.github.io/</id>
   
   <author>
@@ -17,11 +17,39 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Javascript Study Notes</title>
+    <link href="https://renchk.github.io/2018/11/23/2018-11-23-Javascript-Study-Notes/"/>
+    <id>https://renchk.github.io/2018/11/23/2018-11-23-Javascript-Study-Notes/</id>
+    <published>2018-11-23T00:00:00.000Z</published>
+    <updated>2018-11-23T08:37:26.496Z</updated>
+    
+    <content type="html"><![CDATA[<p>Some useful tips like<br>Format JavaScript Date to yyyy-mm-dd</p><h2 id="Format-JavaScript-Date-to-yyyy-mm-dd"><a href="#Format-JavaScript-Date-to-yyyy-mm-dd" class="headerlink" title="Format JavaScript Date to yyyy-mm-dd"></a>Format JavaScript Date to yyyy-mm-dd</h2><pre><code>function formatDate(date) { //Format JavaScript Date to yyyy-mm-dd     var d = new Date(date),month = &apos;&apos; + (d.getMonth() + 1),day = &apos;&apos; + d.getDate(),year = d.getFullYear();     if (month.length &lt; 2) month = &apos;0&apos; + month;     if (day.length &lt; 2) day = &apos;0&apos; + day;     return [year, month, day].join(&apos;-&apos;); }</code></pre><h2 id="How-to-run-jQuery-directly-on-any-page-in-the-browser"><a href="#How-to-run-jQuery-directly-on-any-page-in-the-browser" class="headerlink" title="How to run jQuery directly on any page in the browser?"></a>How to run jQuery directly on any page in the browser?</h2><pre><code>var body = document.getElementsByTagName(&quot;body&quot;)[0]; var script = document.createElement(&apos;script&apos;); script.type = &quot;text/javascript&quot;; script.src = &quot;http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js&quot;; body.appendChild(script);</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Some useful tips like&lt;br&gt;Format JavaScript Date to yyyy-mm-dd&lt;/p&gt;
+&lt;h2 id=&quot;Format-JavaScript-Date-to-yyyy-mm-dd&quot;&gt;&lt;a href=&quot;#Format-JavaScri
+      
+    
+    </summary>
+    
+      <category term="Javascript" scheme="https://renchk.github.io/categories/Javascript/"/>
+    
+    
+      <category term="Javascript" scheme="https://renchk.github.io/tags/Javascript/"/>
+    
+      <category term="jQuery" scheme="https://renchk.github.io/tags/jQuery/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Chrome Extension Copy the title and link</title>
-    <link href="https://renchk.github.io/2017/10/10/2018-01-10-Chrome-Extensions-Link-and-Title-Copy/"/>
-    <id>https://renchk.github.io/2017/10/10/2018-01-10-Chrome-Extensions-Link-and-Title-Copy/</id>
-    <published>2017-10-10T00:00:00.000Z</published>
-    <updated>2018-11-23T08:31:44.266Z</updated>
+    <link href="https://renchk.github.io/2018/01/10/2018-01-10-Chrome-Extensions-Link-and-Title-Copy/"/>
+    <id>https://renchk.github.io/2018/01/10/2018-01-10-Chrome-Extensions-Link-and-Title-Copy/</id>
+    <published>2018-01-10T00:00:00.000Z</published>
+    <updated>2018-11-23T08:33:44.924Z</updated>
     
     <content type="html"><![CDATA[<p>Chrome Extension demoe to copy the title and link in one time quickly</p><a id="more"></a><h2 id="Chrome-Extension"><a href="#Chrome-Extension" class="headerlink" title="Chrome Extension"></a>Chrome Extension</h2><p>This is Chrome Extension, which you can copy the title and link in one time quickly.</p><p><img src="https://raw.githubusercontent.com/TonyRenHK/Demo/master/Blog/2018-01-10-Chrome-Extensions-Link-and-Title-Copy.PNG" alt="alt tag"></p><p>The related code:</p><p><a href="https://github.com/TonyRenHK/Link_Copy" target="_blank" rel="noopener">https://github.com/TonyRenHK/Link_Copy</a></p>]]></content>
     
@@ -58,9 +86,9 @@
       <category term="Salesforce" scheme="https://renchk.github.io/categories/Salesforce/"/>
     
     
-      <category term="Apex" scheme="https://renchk.github.io/tags/Apex/"/>
-    
       <category term="Salesforce" scheme="https://renchk.github.io/tags/Salesforce/"/>
+    
+      <category term="Apex" scheme="https://renchk.github.io/tags/Apex/"/>
     
       <category term="JSForce" scheme="https://renchk.github.io/tags/JSForce/"/>
     
@@ -182,9 +210,9 @@
       <category term="bootstrap" scheme="https://renchk.github.io/categories/bootstrap/"/>
     
     
-      <category term="Apex" scheme="https://renchk.github.io/tags/Apex/"/>
-    
       <category term="Salesforce" scheme="https://renchk.github.io/tags/Salesforce/"/>
+    
+      <category term="Apex" scheme="https://renchk.github.io/tags/Apex/"/>
     
       <category term="Bootstrap" scheme="https://renchk.github.io/tags/Bootstrap/"/>
     
@@ -286,9 +314,9 @@
       <category term="Salesforce" scheme="https://renchk.github.io/categories/Salesforce/"/>
     
     
-      <category term="Apex" scheme="https://renchk.github.io/tags/Apex/"/>
-    
       <category term="Salesforce" scheme="https://renchk.github.io/tags/Salesforce/"/>
+    
+      <category term="Apex" scheme="https://renchk.github.io/tags/Apex/"/>
     
       <category term="TriggerClass" scheme="https://renchk.github.io/tags/TriggerClass/"/>
     
@@ -362,9 +390,9 @@
       <category term="Salesforce" scheme="https://renchk.github.io/categories/Salesforce/"/>
     
     
-      <category term="Apex" scheme="https://renchk.github.io/tags/Apex/"/>
-    
       <category term="Salesforce" scheme="https://renchk.github.io/tags/Salesforce/"/>
+    
+      <category term="Apex" scheme="https://renchk.github.io/tags/Apex/"/>
     
   </entry>
   
@@ -388,9 +416,9 @@
     
       <category term="HTML" scheme="https://renchk.github.io/tags/HTML/"/>
     
-      <category term="CSS" scheme="https://renchk.github.io/tags/CSS/"/>
-    
       <category term="Bootstrap" scheme="https://renchk.github.io/tags/Bootstrap/"/>
+    
+      <category term="CSS" scheme="https://renchk.github.io/tags/CSS/"/>
     
   </entry>
   
@@ -437,9 +465,9 @@
       <category term="Salesforce" scheme="https://renchk.github.io/categories/Salesforce/"/>
     
     
-      <category term="Apex" scheme="https://renchk.github.io/tags/Apex/"/>
-    
       <category term="Salesforce" scheme="https://renchk.github.io/tags/Salesforce/"/>
+    
+      <category term="Apex" scheme="https://renchk.github.io/tags/Apex/"/>
     
   </entry>
   
@@ -488,34 +516,6 @@
       <category term="Essbase" scheme="https://renchk.github.io/tags/Essbase/"/>
     
       <category term="Database" scheme="https://renchk.github.io/tags/Database/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Generate Blog Post Name for Jekyll Blog quickly</title>
-    <link href="https://renchk.github.io/2016/08/21/2016-08-21-Generate-Post-Name-Jekyll-Blog-quickly/"/>
-    <id>https://renchk.github.io/2016/08/21/2016-08-21-Generate-Post-Name-Jekyll-Blog-quickly/</id>
-    <published>2016-08-21T00:00:00.000Z</published>
-    <updated>2018-11-23T07:35:29.718Z</updated>
-    
-    <content type="html"><![CDATA[<p>Generating Blog Post Name using Javascript.</p><a id="more"></a><h2 id="Question"><a href="#Question" class="headerlink" title="Question"></a>Question</h2><p>How to Generate Blog Post Name for Jekyll Blog quickly?</p><h2 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h2><p>For example:</p><p>If you want to posy blog name ‘How to Discover Your Blogging Niche?’ in Jekyll, and the posy name should name as ‘2016-08-29-How-to-Discover-Your-Blogging-Niche.markdown’.</p><p>I write following code to let us quickly generate Post Name</p><p><strong> Demo </strong>:</p><p>The demo link: <a href="https://tony-ren-dev.github.io/demo/Jquery/Generate-Name.html" target="_blank" rel="noopener">Generate Post Name</a> </p><iframe src="https://tony-ren-dev.github.io/demo/Jquery/Generate-Name.html" width="700" height="200" frameborder="0" allowfullscreen></iframe><h2 id="Source-Code"><a href="#Source-Code" class="headerlink" title="Source Code"></a>Source Code</h2><p>There are following Code:</p><p>The source code: <a href="https://gist.github.com/TonyRenHK/47304edf522399bd667b85d9c8f5b01d" target="_blank" rel="noopener">codes</a> </p><script src="//gist.github.com/47304edf522399bd667b85d9c8f5b01d.js"></script>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Generating Blog Post Name using Javascript.&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="JQuery" scheme="https://renchk.github.io/categories/JQuery/"/>
-    
-    
-      <category term="JQuery" scheme="https://renchk.github.io/tags/JQuery/"/>
-    
-      <category term="HTML" scheme="https://renchk.github.io/tags/HTML/"/>
-    
-      <category term="Demo" scheme="https://renchk.github.io/tags/Demo/"/>
-    
-      <category term="Single Page Application" scheme="https://renchk.github.io/tags/Single-Page-Application/"/>
     
   </entry>
   
