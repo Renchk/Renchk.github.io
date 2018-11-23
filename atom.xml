@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://renchk.github.io/"/>
-  <updated>2018-11-23T07:33:28.579Z</updated>
+  <updated>2018-11-23T07:34:09.351Z</updated>
   <id>https://renchk.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://renchk.github.io/2017/10/10/2018-01-10-Chrome-Extensions-Link-and-Title-Copy/"/>
     <id>https://renchk.github.io/2017/10/10/2018-01-10-Chrome-Extensions-Link-and-Title-Copy/</id>
     <published>2017-10-10T00:00:00.000Z</published>
-    <updated>2018-11-23T07:33:28.579Z</updated>
+    <updated>2018-11-23T07:34:09.351Z</updated>
     
     <content type="html"><![CDATA[<p>Chrome Extension demoe to copy the title and link in one time quickly</p><a id="more"></a><h2 id="Chrome-Extension"><a href="#Chrome-Extension" class="headerlink" title="Chrome Extension"></a>Chrome Extension</h2><p>Today, I will one Chrome Extension to copy the title and link in one time quickly.</p><p><img src="https://raw.githubusercontent.com/TonyRenHK/Demo/master/Blog/2018-01-10-Chrome-Extensions-Link-and-Title-Copy.PNG" alt="alt tag"></p><p>The related code:</p><p><a href="https://github.com/TonyRenHK/Link_Copy" target="_blank" rel="noopener">https://github.com/TonyRenHK/Link_Copy</a></p>]]></content>
     
@@ -31,9 +31,7 @@
     
     </summary>
     
-      <category term="Google" scheme="https://renchk.github.io/categories/Google/"/>
-    
-      <category term="Project" scheme="https://renchk.github.io/categories/Google/Project/"/>
+      <category term="Google Project" scheme="https://renchk.github.io/categories/Google-Project/"/>
     
     
       <category term="Demo" scheme="https://renchk.github.io/tags/Demo/"/>
@@ -60,9 +58,9 @@
       <category term="Salesforce" scheme="https://renchk.github.io/categories/Salesforce/"/>
     
     
-      <category term="Salesforce" scheme="https://renchk.github.io/tags/Salesforce/"/>
-    
       <category term="Apex" scheme="https://renchk.github.io/tags/Apex/"/>
+    
+      <category term="Salesforce" scheme="https://renchk.github.io/tags/Salesforce/"/>
     
       <category term="JSForce" scheme="https://renchk.github.io/tags/JSForce/"/>
     
@@ -134,9 +132,9 @@
       <category term="Demo" scheme="https://renchk.github.io/categories/Demo/"/>
     
     
-      <category term="Salesforce" scheme="https://renchk.github.io/tags/Salesforce/"/>
-    
       <category term="Demo" scheme="https://renchk.github.io/tags/Demo/"/>
+    
+      <category term="Salesforce" scheme="https://renchk.github.io/tags/Salesforce/"/>
     
   </entry>
   
@@ -184,9 +182,9 @@
       <category term="bootstrap" scheme="https://renchk.github.io/categories/bootstrap/"/>
     
     
-      <category term="Salesforce" scheme="https://renchk.github.io/tags/Salesforce/"/>
-    
       <category term="Apex" scheme="https://renchk.github.io/tags/Apex/"/>
+    
+      <category term="Salesforce" scheme="https://renchk.github.io/tags/Salesforce/"/>
     
       <category term="Bootstrap" scheme="https://renchk.github.io/tags/Bootstrap/"/>
     
@@ -288,9 +286,9 @@
       <category term="Salesforce" scheme="https://renchk.github.io/categories/Salesforce/"/>
     
     
-      <category term="Salesforce" scheme="https://renchk.github.io/tags/Salesforce/"/>
-    
       <category term="Apex" scheme="https://renchk.github.io/tags/Apex/"/>
+    
+      <category term="Salesforce" scheme="https://renchk.github.io/tags/Salesforce/"/>
     
       <category term="TriggerClass" scheme="https://renchk.github.io/tags/TriggerClass/"/>
     
@@ -364,9 +362,9 @@
       <category term="Salesforce" scheme="https://renchk.github.io/categories/Salesforce/"/>
     
     
-      <category term="Salesforce" scheme="https://renchk.github.io/tags/Salesforce/"/>
-    
       <category term="Apex" scheme="https://renchk.github.io/tags/Apex/"/>
+    
+      <category term="Salesforce" scheme="https://renchk.github.io/tags/Salesforce/"/>
     
   </entry>
   
@@ -438,9 +436,9 @@
       <category term="Salesforce" scheme="https://renchk.github.io/categories/Salesforce/"/>
     
     
-      <category term="Salesforce" scheme="https://renchk.github.io/tags/Salesforce/"/>
-    
       <category term="Apex" scheme="https://renchk.github.io/tags/Apex/"/>
+    
+      <category term="Salesforce" scheme="https://renchk.github.io/tags/Salesforce/"/>
     
   </entry>
   
