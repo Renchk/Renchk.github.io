@@ -39,24 +39,56 @@
   </entry>
   
   <entry>
-    <title>关于我</title>
-    <link href="https://renchk.github.io/2017/07/05/About-Me/"/>
-    <id>https://renchk.github.io/2017/07/05/About-Me/</id>
-    <published>2017-07-05T00:00:00.000Z</published>
-    <updated>2018-11-22T15:48:01.042Z</updated>
+    <title>How to add &#39;Loading&#39; Action Status when Searching in Salesforce?</title>
+    <link href="https://renchk.github.io/2017/07/07/2015-07-07-How-to-add-Loading-Action-Status-when-Searching-in-Salesforce/"/>
+    <id>https://renchk.github.io/2017/07/07/2015-07-07-How-to-add-Loading-Action-Status-when-Searching-in-Salesforce/</id>
+    <published>2017-07-07T00:00:00.000Z</published>
+    <updated>2018-11-23T02:37:10.757Z</updated>
     
-    <content type="html"><![CDATA[<p>关于我</p><a id="more"></a><p>2015年学习Salesforce</p>]]></content>
+    <content type="html"><![CDATA[<p>Solution for adding ‘Loading’ Action Status when Searching in Salesforce.</p><h2 id="Question"><a href="#Question" class="headerlink" title="Question"></a>Question</h2><p>How to add ‘Loading’ Action Status when Searching in Salesforce?</p><h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>How to add’Loading’ when searching?<br>The following code can be added in Visualforce page.<br>Firstly, we can write javascript code:</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$(document).on(&apos;mousemove&apos;, function(e)&#123;</span><br><span class="line">            $(&apos;#loadtext&apos;).css(&#123;</span><br><span class="line">               left:  e.pageX,</span><br><span class="line">               top:   e.pageY</span><br><span class="line">            &#125;);</span><br><span class="line">        &#125;);</span><br></pre></td></tr></table></figure><p>Apex Code in salesforce:</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;apex:actionstatus id=&quot;ActionStatus&quot;&gt;</span><br><span class="line">        &lt;apex:facet name=&quot;start&quot;&gt;</span><br><span class="line">            &lt;div class=&quot;waitingSearchDiv&quot; id=&quot;el_loading&quot; style=&quot;background-color: #fbfbfb;</span><br><span class="line">               height: 1000%; width:1000%; opacity:0.65;&quot;&gt; </span><br><span class="line">                &lt;div class=&quot;waitingHolder&quot; id=&quot;loadtext&quot; style=&quot;position: absolute;&quot; align=&quot;left&quot; valign=&quot;top&quot;&gt;</span><br><span class="line">                    &amp;nbsp;&amp;nbsp;&amp;nbsp;</span><br><span class="line">                    &lt;img class=&quot;waitingImage&quot; src=&quot;/img/loading.gif&quot; title=&quot;Please Wait...&quot; /&gt;</span><br><span class="line">                    &lt;span class=&quot;waitingDescription&quot;&gt;Please Wait...&lt;/span&gt;</span><br><span class="line">                &lt;/div&gt;</span><br><span class="line">            &lt;/div&gt;</span><br><span class="line">        &lt;/apex:facet&gt;</span><br><span class="line">    &lt;/apex:actionstatus&gt;</span><br></pre></td></tr></table></figure><p>And then we can write Searching Button:</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;apex:commandButton value=&quot;&lt;&lt;&quot; action=&quot;&#123;!firstPage&#125;&quot; reRender=&quot;results,debug,error,pagination&quot; status=&quot;ActionStatus&quot; /&gt;</span><br></pre></td></tr></table></figure><p>The Final result like this:</p><p><img src="https://raw.githubusercontent.com/TonyRenHK/Demo/master/Blog/2015-07-17%2016_33_53-salesforce.com%20-%20loading.png" alt="alt tag"></p><p>Any code samples provided here are purely for experimental purposes and comes with no warranty or support.  The primary purpose of this article is just to share the knowledge and my own experience. Nothing more, nothing less. Use this code and approach at your own risk.Please feel free to contact me (<a href="mailto:yamshingkwan@gmail.com" target="_blank" rel="noopener">yamshingkwan@gmail.com</a>) if you have any inquiry or the code have any problem. Thank you.</p>]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;关于我&lt;/p&gt;
+      
+      
+        &lt;p&gt;Solution for adding ‘Loading’ Action Status when Searching in Salesforce.&lt;/p&gt;
+&lt;h2 id=&quot;Question&quot;&gt;&lt;a href=&quot;#Question&quot; class=&quot;headerlink&quot; ti
+      
+    
+    </summary>
+    
+      <category term="Salesforce" scheme="https://renchk.github.io/categories/Salesforce/"/>
+    
+    
+      <category term="Salesforce" scheme="https://renchk.github.io/tags/Salesforce/"/>
+    
+      <category term="Apex" scheme="https://renchk.github.io/tags/Apex/"/>
+    
+      <category term="SFDC" scheme="https://renchk.github.io/tags/SFDC/"/>
+    
+      <category term="visualforce Page" scheme="https://renchk.github.io/tags/visualforce-Page/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>About Me</title>
+    <link href="https://renchk.github.io/2017/07/05/About-Me/"/>
+    <id>https://renchk.github.io/2017/07/05/About-Me/</id>
+    <published>2017-07-05T00:00:00.000Z</published>
+    <updated>2018-11-23T02:34:49.736Z</updated>
+    
+    <content type="html"><![CDATA[<p>About Me</p><a id="more"></a><p>I am Tony Ren , Salesforce developer.</p><h2 id="Contact-Me"><a href="#Contact-Me" class="headerlink" title="Contact Me?"></a>Contact Me?</h2><ul><li>GitHub：<a href="https://github.com/Renchk" target="_blank" rel="noopener">Renchk</a></li><li>Email：<a href="mailto:renchk@foxmail.com" target="_blank" rel="noopener">renchk@foxmail.com</a></li><li><a href="https://plus.google.com/104700122819352899100" target="_blank" rel="noopener">Google ++</a></li><li><a href="https://hk.linkedin.com/in/tony-ren-hk" target="_blank" rel="noopener">LinkedIn</a></li><li><a href="http://renchk.blogspot.hk/" target="_blank" rel="noopener">Blogger</a></li><li><a href="https://www.youtube.com/channel/UCYKaW0KfHSuKw2SpqebLqeQ" target="_blank" rel="noopener">YouTube</a></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;About Me&lt;/p&gt;
     
     </summary>
     
       <category term="Me" scheme="https://renchk.github.io/categories/Me/"/>
     
     
-      <category term="关于我" scheme="https://renchk.github.io/tags/%E5%85%B3%E4%BA%8E%E6%88%91/"/>
+      <category term="About Me" scheme="https://renchk.github.io/tags/About-Me/"/>
     
       <category term="Tony Ren" scheme="https://renchk.github.io/tags/Tony-Ren/"/>
     
