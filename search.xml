@@ -44,9 +44,9 @@
       
         <tags>
             
-            <tag> Apex </tag>
-            
             <tag> Salesforce </tag>
+            
+            <tag> Apex </tag>
             
             <tag> JSForce </tag>
             
@@ -173,9 +173,9 @@
       
         <tags>
             
-            <tag> Apex </tag>
-            
             <tag> Salesforce </tag>
+            
+            <tag> Apex </tag>
             
             <tag> Bootstrap </tag>
             
@@ -256,9 +256,9 @@
             
             <tag> HTML </tag>
             
-            <tag> JavaScript </tag>
-            
             <tag> Demo </tag>
+            
+            <tag> JavaScript </tag>
             
         </tags>
       
@@ -281,9 +281,9 @@
       
         <tags>
             
-            <tag> Apex </tag>
-            
             <tag> Salesforce </tag>
+            
+            <tag> Apex </tag>
             
             <tag> TriggerClass </tag>
             
@@ -310,9 +310,9 @@
       
         <tags>
             
-            <tag> Oracle </tag>
-            
             <tag> Essbase </tag>
+            
+            <tag> Oracle </tag>
             
         </tags>
       
@@ -335,9 +335,9 @@
       
         <tags>
             
-            <tag> Oracle </tag>
-            
             <tag> Essbase </tag>
+            
+            <tag> Oracle </tag>
             
         </tags>
       
@@ -360,9 +360,9 @@
       
         <tags>
             
-            <tag> Apex </tag>
-            
             <tag> Salesforce </tag>
+            
+            <tag> Apex </tag>
             
         </tags>
       
@@ -412,9 +412,9 @@
       
         <tags>
             
-            <tag> JQuery </tag>
-            
             <tag> HTML </tag>
+            
+            <tag> JQuery </tag>
             
         </tags>
       
@@ -437,9 +437,9 @@
       
         <tags>
             
-            <tag> Apex </tag>
-            
             <tag> Salesforce </tag>
+            
+            <tag> Apex </tag>
             
         </tags>
       
@@ -450,7 +450,7 @@
       <link href="/2016/08/24/2016-08-24-Git-Study-Note/"/>
       <url>/2016/08/24/2016-08-24-Git-Study-Note/</url>
       
-        <content type="html"><![CDATA[<p>How to push code to github?</p><a id="more"></a><h2 id="Question"><a href="#Question" class="headerlink" title="Question"></a>Question</h2><p>I have some codes in Cloud 9. How to push my code to github?</p><h2 id="How-to-push-my-code-to-github"><a href="#How-to-push-my-code-to-github" class="headerlink" title="How to push my code to github?"></a>How to push my code to github?</h2><p>It applied in cloud 9.</p><h2 id="Follow-below-Code"><a href="#Follow-below-Code" class="headerlink" title="Follow below Code"></a>Follow below Code</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ cd workspace</span><br><span class="line">$ cd renchk.github.io</span><br><span class="line">$ git add -A</span><br><span class="line">$ git commit -m &quot;20160721&quot; </span><br><span class="line">$ git remote add b1 https://github.com/Renchk/renchk.github.io.git </span><br><span class="line">$ git push -u origin9 master</span><br></pre></td></tr></table></figure><p>After entering above codes, you will be asked to input username and password. Also, you can use following code to push your repo to github one time:</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add -A;git commit -m &quot;Tony-20161005-Test10&quot;;git remote add Ac10 https://github.com/TonyRenHK/TonyRenHK.github.io.git;git push -u Ac10 master</span><br></pre></td></tr></table></figure><p>Note: you need to change ‘<a href="https://github.com/TonyRenHK/TonyRenHK.github.io.git&#39;" target="_blank" rel="noopener">https://github.com/TonyRenHK/TonyRenHK.github.io.git&#39;</a> to your web URL.</p><h2 id="How-to-preview-my-Blog-in-Cloud9"><a href="#How-to-preview-my-Blog-in-Cloud9" class="headerlink" title="How to preview my Blog in Cloud9?"></a>How to preview my Blog in Cloud9?</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">tonyrenhk:~/workspace (master) $ gem install jekyll gem install jekyll-sitemap gem install github-pages</span><br><span class="line"></span><br><span class="line">cd renchk.github.io</span><br><span class="line"></span><br><span class="line">jekyll serve --host 0.0.0.0 --port 8080</span><br></pre></td></tr></table></figure><p>and I can preview here: <a href="https://demo-project-tonyrenhk.c9users.io/" target="_blank" rel="noopener">https://demo-project-tonyrenhk.c9users.io/</a></p>]]></content>
+        <content type="html"><![CDATA[<p>How to push code to github?</p><a id="more"></a><h2 id="Question"><a href="#Question" class="headerlink" title="Question"></a>Question</h2><p>I have some codes in Cloud 9. How to push my code to github?</p><h2 id="How-to-push-my-code-to-github"><a href="#How-to-push-my-code-to-github" class="headerlink" title="How to push my code to github?"></a>How to push my code to github?</h2><p>It applied in cloud 9.</p><h2 id="Follow-below-Code"><a href="#Follow-below-Code" class="headerlink" title="Follow below Code"></a>Follow below Code</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ cd workspace</span><br><span class="line">$ cd renchk.github.io</span><br><span class="line">$ git add -A</span><br><span class="line">$ git commit -m &quot;20160721&quot; </span><br><span class="line">$ git remote add b1 https://github.com/Renchk/renchk.github.io.git </span><br><span class="line">$ git push -u origin9 master</span><br></pre></td></tr></table></figure><p>After entering above codes, you will be asked to input username and password. Also, you can use following code to push your repo to github one time:</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add -A;git commit -m &quot;Tony-20161005-Test10&quot;;git remote add Ac10 https://github.com/TonyRenHK/TonyRenHK.github.io.git;git push -u Ac10 master</span><br></pre></td></tr></table></figure><p>Note: you need to change ‘<a href="https://github.com/TonyRenHK/TonyRenHK.github.io.git&#39;" target="_blank" rel="noopener">https://github.com/TonyRenHK/TonyRenHK.github.io.git&#39;</a> to your web URL.</p><h2 id="How-to-preview-my-Blog-in-Cloud9"><a href="#How-to-preview-my-Blog-in-Cloud9" class="headerlink" title="How to preview my Blog in Cloud9?"></a>How to preview my Blog in Cloud9?</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">tonyrenhk:~/workspace (master) $ gem install jekyll gem install jekyll-sitemap gem install github-pages</span><br><span class="line"></span><br><span class="line">cd renchk.github.io</span><br><span class="line"></span><br><span class="line">jekyll serve --host 0.0.0.0 --port 8080</span><br></pre></td></tr></table></figure><p>and I can preview here: <a href="https://demo-project-tonyrenhk.c9users.io/" target="_blank" rel="noopener">https://demo-project-tonyrenhk.c9users.io/</a></p><h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><p>Pro Git CN version: <a href="http://iissnan.com/progit/" target="_blank" rel="noopener">http://iissnan.com/progit/</a></p>]]></content>
       
       
       <categories>
@@ -512,9 +512,9 @@
       
         <tags>
             
-            <tag> JQuery </tag>
-            
             <tag> HTML </tag>
+            
+            <tag> JQuery </tag>
             
             <tag> Demo </tag>
             
@@ -541,9 +541,9 @@
       
         <tags>
             
-            <tag> Apex </tag>
-            
             <tag> Salesforce </tag>
+            
+            <tag> Apex </tag>
             
             <tag> visualforce Page </tag>
             
