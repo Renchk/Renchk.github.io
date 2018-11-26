@@ -156,9 +156,9 @@
       <category term="Demo" scheme="https://renchk.github.io/categories/Demo/"/>
     
     
-      <category term="Salesforce" scheme="https://renchk.github.io/tags/Salesforce/"/>
-    
       <category term="Demo" scheme="https://renchk.github.io/tags/Demo/"/>
+    
+      <category term="Salesforce" scheme="https://renchk.github.io/tags/Salesforce/"/>
     
   </entry>
   
@@ -314,9 +314,9 @@
     
       <category term="Apex" scheme="https://renchk.github.io/tags/Apex/"/>
     
-      <category term="TriggerClass" scheme="https://renchk.github.io/tags/TriggerClass/"/>
-    
       <category term="sending-email" scheme="https://renchk.github.io/tags/sending-email/"/>
+    
+      <category term="TriggerClass" scheme="https://renchk.github.io/tags/TriggerClass/"/>
     
   </entry>
   
