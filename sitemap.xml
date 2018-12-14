@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://renchk.github.io/2017/03/05/2017-03-05-How-to-Testing-email-template-in-SFDC-Anonymous-Window/</loc>
+    
+    <lastmod>2018-12-14T13:39:12.459Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://renchk.github.io/categories/index.html</loc>
+    
+    <lastmod>2018-11-27T09:42:56.190Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://renchk.github.io/2018/01/10/2018-01-10-Chrome-Extensions-Link-and-Title-Copy/</loc>
     
     <lastmod>2018-11-26T07:28:01.383Z</lastmod>
@@ -26,20 +40,6 @@
     <loc>https://renchk.github.io/Project/index.html</loc>
     
     <lastmod>2018-11-25T07:46:06.571Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://renchk.github.io/tags/index.html</loc>
-    
-    <lastmod>2018-11-23T09:59:33.002Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://renchk.github.io/categories/index.html</loc>
-    
-    <lastmod>2018-11-23T09:59:01.127Z</lastmod>
     
   </url>
   
@@ -138,13 +138,6 @@
     <loc>https://renchk.github.io/2017/06/24/2017-06-24-How-sync-your-salesforce-code-to-Githubbitbucket/</loc>
     
     <lastmod>2018-11-23T07:29:35.551Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://renchk.github.io/2017/03/05/2017-03-05-How-to-Testing-email-template-in-SFDC-Anonymous-Window/</loc>
-    
-    <lastmod>2018-11-23T07:16:17.368Z</lastmod>
     
   </url>
   
