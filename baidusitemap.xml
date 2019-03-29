@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://renchk.github.io/2016/08/25/2016-08-25-Salesforce-Apex-Study-Note/</loc>
+    <lastmod>2019-03-13T04:16:43.034Z</lastmod>
+  </url>  <url>
     <loc>https://renchk.github.io/2017/03/05/2017-03-05-How-to-Testing-email-template-in-SFDC-Anonymous-Window/</loc>
     <lastmod>2018-12-14T13:39:12.459Z</lastmod>
   </url>  <url>
@@ -27,9 +30,6 @@
   </url>  <url>
     <loc>https://renchk.github.io/2016/08/21/2016-08-21-Generate-Post-Name-Jekyll-Blog-quickly/</loc>
     <lastmod>2018-11-23T08:38:09.604Z</lastmod>
-  </url>  <url>
-    <loc>https://renchk.github.io/2016/08/25/2016-08-25-Salesforce-Apex-Study-Note/</loc>
-    <lastmod>2018-11-23T08:26:00.123Z</lastmod>
   </url>  <url>
     <loc>https://renchk.github.io/2016/08/24/2016-08-24-Git-Study-Note/</loc>
     <lastmod>2018-11-23T08:20:53.796Z</lastmod>

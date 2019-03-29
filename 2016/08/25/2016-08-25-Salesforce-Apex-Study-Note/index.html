@@ -5,11 +5,11 @@
   <meta name="google-site-verification" content="036nsNgxuH68xUABF8jrgg8Xzsti4FN8eKjWvA185C4">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <title>Salesforce Apex Study Note | Tony Ren</title>
+  <title>Salesforce Apex Study Note | CK Ren</title>
   <meta name="HandheldFriendly" content="True">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <link rel="shortcut icon" href="https://raw.githubusercontent.com/TonyRenHK/TonyRenHK/master/Image/TonyRenBlog_favicon.ico">
-  <link rel="alternate" href="/atom.xml" title="Tony Ren">
+  <link rel="alternate" href="/atom.xml" title="CK Ren">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   <link rel="shortcut icon" href="https://raw.githubusercontent.com/TonyRenHK/TonyRenHK/master/Image/TonyRenBlog_favicon.ico">
@@ -37,7 +37,7 @@
     <header class="l_header pure">
 	<div class="wrapper">
 		<div class="nav-main container container--flex">
-			<a class="logo flat-box" href="/">Tony Ren</a>
+			<a class="logo flat-box" href="/">CK Ren</a>
 				<div class="menu">
 					<ul class="h-list">
             
@@ -174,12 +174,14 @@
 <h2 id="Change-the-string-to-date"><a href="#Change-the-string-to-date" class="headerlink" title="Change the string to date"></a>Change the string to date</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Date x = Date.valueOf(&apos;2015-8-11&apos;); </span><br><span class="line"></span><br><span class="line">system.debug(&apos;Now &apos;+ x );</span><br></pre></td></tr></table></figure>
 <h2 id="Change-the-date-to-String-with-formatting"><a href="#Change-the-date-to-String-with-formatting" class="headerlink" title="Change the date to String with formatting"></a>Change the date to String with formatting</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">date InputDate = date.newInstance(2017, 3, 21); </span><br><span class="line"></span><br><span class="line">Integer d = InputDate.day(); </span><br><span class="line"></span><br><span class="line">Integer mo = InputDate.month(); </span><br><span class="line"></span><br><span class="line">Integer yr = InputDate.year(); </span><br><span class="line"></span><br><span class="line">DateTime DT = DateTime.newInstance(yr, mo, d); </span><br><span class="line"></span><br><span class="line">system.debug(&apos;Now &apos;+ DT.format(&apos;yyyy-MM-dd&apos;) );</span><br></pre></td></tr></table></figure>
 <h2 id="How-can-we-implement-stack-concepts-in-salesforce-apex"><a href="#How-can-we-implement-stack-concepts-in-salesforce-apex" class="headerlink" title="How can we implement stack concepts in salesforce apex?"></a>How can we implement stack concepts in salesforce apex?</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">public class MyStack &#123;</span><br><span class="line"></span><br><span class="line">    private List &lt; sObject &gt; al;</span><br><span class="line">    public MyStack() &#123;</span><br><span class="line">        al = new List &lt; sObject &gt; ();</span><br><span class="line">    &#125;</span><br><span class="line">    public void push(sObject item) &#123;</span><br><span class="line">        al.add(item);</span><br><span class="line">    &#125;</span><br><span class="line">    public sObject pop() &#123;</span><br><span class="line">        if (!isEmpty())</span><br><span class="line">            return al.remove(size() - 1);</span><br><span class="line">        else</span><br><span class="line">            return null;</span><br><span class="line">    &#125;</span><br><span class="line">    public boolean isEmpty() &#123;</span><br><span class="line">        return (al.size() == 0);</span><br><span class="line">    &#125;</span><br><span class="line">    public sObject peek() &#123;</span><br><span class="line">        if (!isEmpty())</span><br><span class="line">            return al.get(size() - 1);</span><br><span class="line">        else</span><br><span class="line">            null;</span><br><span class="line">    &#125;</span><br><span class="line">    public int size() &#123;</span><br><span class="line">        return al.size();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="SQL-–-gt-List–-gt-Map"><a href="#SQL-–-gt-List–-gt-Map" class="headerlink" title="SQL –&gt;List–&gt; Map"></a>SQL –&gt;List–&gt; Map</h2><p>map&lt;id, User&gt; userMap = new map&lt;id, User&gt;([select ID,ManagerId,Manager.Email from User where id in : OwnerIdSet]);</p>
+
         </div>
 
         <section class="meta">
-            <time class="time" itemprop="dateUpdated" datetime="2018-11-23T08:26:00+00:00" content="2018-11-23">
+            <time class="time" itemprop="dateUpdated" datetime="2019-03-13T04:16:43+00:00" content="2019-03-13">
                 <i class="fas fa-pen fa-fw" aria-hidden="true"></i>
-                Last updated Time：2018-11-23
+                Last updated Time：2019-03-13
             </time>
             
                 
@@ -314,10 +316,14 @@
         
     <section class="m_widget author">
         
+            <div class="header">
+                <img class="avatar" src="https://raw.githubusercontent.com/TonyRenHK/Store_Picture/master/Logo/Me2.jpg">
+            </div>
+        
         
             <div class="content">
                 
-                    <h2>Tony Ren</h2>
+                    <h2>CK Ren</h2>
                 
                 
                     <p>Study Site</p>
@@ -419,7 +425,7 @@
             <div class="wrapper"><a class="s-toc rightBtn" title="固定到顶部" target="_blank" rel="external nofollow noopener noreferrer" href="javascript:void(0)"><i class="fas fa-thumbtack fa-fw"></i></a></div>
         </header>
         <div class="content pure">
-            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#How-to-get-certain-days-month-end-day"><span class="toc-text">How to get certain days month end day?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Change-the-string-to-date"><span class="toc-text">Change the string to date</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Change-the-date-to-String-with-formatting"><span class="toc-text">Change the date to String with formatting</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#How-can-we-implement-stack-concepts-in-salesforce-apex"><span class="toc-text">How can we implement stack concepts in salesforce apex?</span></a></li></ol>
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#How-to-get-certain-days-month-end-day"><span class="toc-text">How to get certain days month end day?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Change-the-string-to-date"><span class="toc-text">Change the string to date</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Change-the-date-to-String-with-formatting"><span class="toc-text">Change the date to String with formatting</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#How-can-we-implement-stack-concepts-in-salesforce-apex"><span class="toc-text">How can we implement stack concepts in salesforce apex?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#SQL-–-gt-List–-gt-Map"><span class="toc-text">SQL –&gt;List–&gt; Map</span></a></li></ol>
         </div>
     </section>
 
@@ -430,7 +436,7 @@
     <header class="header pure">
         <div><i class="fas fa-link fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;More</div>
         
-            <a class="rightBtn" title="Contact Me" target="_blank" rel="external nofollow noopener noreferrer" href="mailto:renchk@foxmail.com?subject=交换友链&body=你好，我想和你交换友链，我已经将【Tony Ren】添加到我的博客的友链中。我的博客链接是："><i class="fas fa-plus fa-fw"></i></a>
+            <a class="rightBtn" title="Contact Me" target="_blank" rel="external nofollow noopener noreferrer" href="mailto:renchk@foxmail.com?subject=交换友链&body=你好，我想和你交换友链，我已经将【CK Ren】添加到我的博客的友链中。我的博客链接是："><i class="fas fa-plus fa-fw"></i></a>
         
     </header>
     <div class="content pure">
@@ -445,7 +451,7 @@
                         
                     <div class="name">
                         
-                            <img src="https://raw.githubusercontent.com/TonyRenHK/TonyRenHK/master/Image/TonyIcon.jpg">
+                            <img src="https://raw.githubusercontent.com/TonyRenHK/Store_Picture/master/Logo/Me2.jpg">
                         
                         &nbsp;&nbsp;About Me
                     </div>
